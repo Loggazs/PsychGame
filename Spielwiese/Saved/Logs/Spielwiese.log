@@ -3356,4 +3356,171 @@ LogInit: Object subsystem initialized
 [2016.08.03-13.38.36:526][896]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Collison" FILE="U:/data/PsychGame/Spielwiese/Saved/Autosaves/Game/Blueprints/Collison_Auto6.uasset" SILENT=false AUTOSAVING=true
 [2016.08.03-13.38.37:081][896]LogSavePackage: Save=532.44ms
 [2016.08.03-13.38.37:081][896]LogSavePackage: Moving 'U:/data/PsychGame/Spielwiese/Saved/Collison_Auto603885B964BB3C1335E3D27B9EC148C02.tmp' to 'U:/data/PsychGame/Spielwiese/Saved/Autosaves/Game/Blueprints/Collison_Auto6.uasset'
-[2016.08.03-13.38.37:118][896]LogSavePackage:Display: Finished SavePackage U:/data/PsychGame/Spielwiese/Saved/Autosaves/Game/Blueprin
+[2016.08.03-13.38.37:118][896]LogSavePackage:Display: Finished SavePackage U:/data/PsychGame/Spielwiese/Saved/Autosaves/Game/Blueprints/Collison_Auto6.uasset
+[2016.08.03-13.38.37:118][896]LogFileHelpers: Auto-saving content packages took 0.626
+[2016.08.03-13.41.57:175][497]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/testMap.testMap:PersistentLevel' has LevelScriptBlueprint '/Game/testMap.testMap:PersistentLevel.testMap' with GeneratedClass '/Game/testMap.testMap_C' with ClassGeneratedBy '/Game/testMap.testMap:PersistentLevel.testMap'
+[2016.08.03-13.41.57:175][497]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.03-13.41.57:175][497]PIE: New page: PIE session: testMap (Aug 3, 2016, 4:41:57 PM)
+[2016.08.03-13.41.57:175][497]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_testMap
+[2016.08.03-13.41.57:183][497]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008343s)
+[2016.08.03-13.41.57:184][497]LogAIModule: Creating AISystem for world testMap
+[2016.08.03-13.41.57:184][497]LogPlayLevel: PIE: World Init took: (0.000751s)
+[2016.08.03-13.41.57:184][497]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/testMap.testMap to /Game/UEDPIE_0_testMap.testMap (0.009340s)
+[2016.08.03-13.41.57:278][497]LogWorld: Game class is 'Mode1_C'
+[2016.08.03-13.41.57:291][497]LogWorld: Bringing World /Game/UEDPIE_0_testMap.testMap up for play (max tick rate 0) at 2016.08.03-15.41.57
+[2016.08.03-13.41.57:292][497]LogWorld: Bringing up level for play took: 0.011932
+[2016.08.03-13.41.57:300][497]PIE: Info Play in editor start time for /Game/UEDPIE_0_testMap -1.823
+[2016.08.03-13.41.57:300][497]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/testMap.testMap:PersistentLevel' has LevelScriptBlueprint '/Game/testMap.testMap:PersistentLevel.testMap' with GeneratedClass '/Game/testMap.testMap_C' with ClassGeneratedBy '/Game/testMap.testMap:PersistentLevel.testMap'
+[2016.08.03-13.41.58:581][646]PIE:Warning: Warning Mobility of Collison_C_1 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.42.00:104][828]PIE:Warning: Warning Mobility of Collison_C_2 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.42.00:538][880]PIE:Warning: Warning Mobility of Collison_C_3 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.42.02:571][123]PIE:Warning: Warning Mobility of Collison_C_4 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.42.02:971][171]PIE:Warning: Warning Mobility of Collison_C_5 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.42.04:659][373]PIE:Warning: Warning Mobility of Collison_C_6 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.42.05:246][443]PIE:Warning: Warning Mobility of Collison_C_7 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.42.07:033][657]PIE:Warning: Warning Mobility of Collison_C_8 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.42.07:687][735]PIE:Warning: Warning Mobility of Collison_C_9 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.42.09:487][950]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/testMap.testMap:PersistentLevel' has LevelScriptBlueprint '/Game/testMap.testMap:PersistentLevel.testMap' with GeneratedClass '/Game/testMap.testMap_C' with ClassGeneratedBy '/Game/testMap.testMap:PersistentLevel.testMap'
+[2016.08.03-13.42.09:538][950]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/testMap.testMap:PersistentLevel' has LevelScriptBlueprint '/Game/testMap.testMap:PersistentLevel.testMap' with GeneratedClass '/Game/testMap.testMap_C' with ClassGeneratedBy '/Game/testMap.testMap:PersistentLevel.testMap'
+[2016.08.03-13.42.52:350][341]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/testMap.testMap:PersistentLevel' has LevelScriptBlueprint '/Game/testMap.testMap:PersistentLevel.testMap' with GeneratedClass '/Game/testMap.testMap_C' with ClassGeneratedBy '/Game/testMap.testMap:PersistentLevel.testMap'
+[2016.08.03-13.42.52:350][341]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.08.03-13.42.52:369][341]LogPlayLevel: [PlayLevel] Compiling testMap before play...
+[2016.08.03-13.42.52:497][341]LogPlayLevel: PlayLevel: Blueprint regeneration took 146 ms (1 blueprints)
+[2016.08.03-13.42.52:525][341]PIE: New page: PIE session: testMap (Aug 3, 2016, 4:42:52 PM)
+[2016.08.03-13.42.52:525][341]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_testMap
+[2016.08.03-13.42.52:533][341]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007365s)
+[2016.08.03-13.42.52:533][341]LogAIModule: Creating AISystem for world testMap
+[2016.08.03-13.42.52:533][341]LogPlayLevel: PIE: World Init took: (0.000623s)
+[2016.08.03-13.42.52:533][341]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/testMap.testMap to /Game/UEDPIE_0_testMap.testMap (0.008209s)
+[2016.08.03-13.42.52:624][341]LogWorld: Game class is 'Mode1_C'
+[2016.08.03-13.42.52:636][341]LogWorld: Bringing World /Game/UEDPIE_0_testMap.testMap up for play (max tick rate 0) at 2016.08.03-15.42.52
+[2016.08.03-13.42.52:637][341]LogWorld: Bringing up level for play took: 0.010946
+[2016.08.03-13.42.52:645][341]PIE: Info Play in editor start time for /Game/UEDPIE_0_testMap 1.522
+[2016.08.03-13.42.52:645][341]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/testMap.testMap:PersistentLevel' has LevelScriptBlueprint '/Game/testMap.testMap:PersistentLevel.testMap' with GeneratedClass '/Game/testMap.testMap_C' with ClassGeneratedBy '/Game/testMap.testMap:PersistentLevel.testMap'
+[2016.08.03-13.42.52:665][342]PIE:Warning: Warning Mobility of Collison_C_1 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.42.54:963][616]PIE:Warning: Warning Mobility of Collison_C_2 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.42.55:012][622]PIE:Warning: Warning Mobility of Collison_C_3 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.42.56:905][848]PIE:Warning: Warning Mobility of Collison_C_4 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.42.56:973][856]PIE:Warning: Warning Mobility of Collison_C_5 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.42.58:705][ 62]PIE:Warning: Warning Mobility of Collison_C_6 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.42.58:772][ 70]PIE:Warning: Warning Mobility of Collison_C_7 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.00:546][282]PIE:Warning: Warning Mobility of Collison_C_8 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.00:563][284]PIE:Warning: Warning Mobility of Collison_C_9 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.02:236][484]PIE:Warning: Warning Mobility of Collison_C_10 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.02:236][484]PIE:Warning: Warning Mobility of Collison_C_11 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.04:045][700]PIE:Warning: Warning Mobility of Collison_C_12 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.04:095][706]PIE:Warning: Warning Mobility of Collison_C_13 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.05:798][909]PIE:Warning: Warning Mobility of Collison_C_14 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.05:815][911]PIE:Warning: Warning Mobility of Collison_C_15 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.07:558][119]PIE:Warning: Warning Mobility of Collison_C_16 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.07:583][122]PIE:Warning: Warning Mobility of Collison_C_17 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.09:333][331]PIE:Warning: Warning Mobility of Collison_C_18 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.09:341][332]PIE:Warning: Warning Mobility of Collison_C_19 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.11:048][536]PIE:Warning: Warning Mobility of Collison_C_20 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.11:123][545]PIE:Warning: Warning Mobility of Collison_C_21 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.12:789][744]PIE:Warning: Warning Mobility of Collison_C_22 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.12:839][750]PIE:Warning: Warning Mobility of Collison_C_23 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.14:399][936]PIE:Warning: Warning Mobility of Collison_C_24 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.14:407][937]PIE:Warning: Warning Mobility of Collison_C_25 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.16:131][143]PIE:Warning: Warning Mobility of Collison_C_26 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.16:132][143]PIE:Warning: Warning Mobility of Collison_C_27 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.17:603][319]PIE:Warning: Warning Mobility of Collison_C_28 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.17:687][329]PIE:Warning: Warning Mobility of Collison_C_29 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.19:592][557]PIE:Warning: Warning Mobility of Collison_C_30 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.19:634][562]PIE:Warning: Warning Mobility of Collison_C_31 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.25:851][306]PIE:Warning: Warning Mobility of Collison_C_32 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.25:901][312]PIE:Warning: Warning Mobility of Collison_C_33 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.27:634][519]PIE:Warning: Warning Mobility of Collison_C_34 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.27:717][529]PIE:Warning: Warning Mobility of Collison_C_35 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.29:362][726]PIE:Warning: Warning Mobility of Collison_C_36 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.29:453][737]PIE:Warning: Warning Mobility of Collison_C_37 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.31:078][931]PIE:Warning: Warning Mobility of Collison_C_38 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.31:103][934]PIE:Warning: Warning Mobility of Collison_C_39 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.32:707][126]PIE:Warning: Warning Mobility of Collison_C_40 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.32:798][137]PIE:Warning: Warning Mobility of Collison_C_41 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.34:910][389]PIE:Warning: Warning Mobility of Collison_C_42 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.34:993][399]PIE:Warning: Warning Mobility of Collison_C_43 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.37:126][654]PIE:Warning: Warning Mobility of Collison_C_44 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.37:176][660]PIE:Warning: Warning Mobility of Collison_C_45 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.38:998][878]PIE:Warning: Warning Mobility of Collison_C_46 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.39:032][882]PIE:Warning: Warning Mobility of Collison_C_47 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.40:695][ 81]PIE:Warning: Warning Mobility of Collison_C_48 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.40:745][ 87]PIE:Warning: Warning Mobility of Collison_C_49 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.43:108][369]PIE:Warning: Warning Mobility of Collison_C_50 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.43:124][371]PIE:Warning: Warning Mobility of Collison_C_51 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.45:587][666]PIE:Warning: Warning Mobility of Collison_C_52 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.45:595][667]PIE:Warning: Warning Mobility of Collison_C_53 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.43.45:725][682]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/testMap.testMap:PersistentLevel' has LevelScriptBlueprint '/Game/testMap.testMap:PersistentLevel.testMap' with GeneratedClass '/Game/testMap.testMap_C' with ClassGeneratedBy '/Game/testMap.testMap:PersistentLevel.testMap'
+[2016.08.03-13.43.45:786][682]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/testMap.testMap:PersistentLevel' has LevelScriptBlueprint '/Game/testMap.testMap:PersistentLevel.testMap' with GeneratedClass '/Game/testMap.testMap_C' with ClassGeneratedBy '/Game/testMap.testMap:PersistentLevel.testMap'
+[2016.08.03-13.43.57:928][366]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/testMap.testMap:PersistentLevel' has LevelScriptBlueprint '/Game/testMap.testMap:PersistentLevel.testMap' with GeneratedClass '/Game/testMap.testMap_C' with ClassGeneratedBy '/Game/testMap.testMap:PersistentLevel.testMap'
+[2016.08.03-13.43.57:928][366]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.08.03-13.43.57:940][366]LogPlayLevel: [PlayLevel] Compiling testMap before play...
+[2016.08.03-13.43.58:063][366]LogPlayLevel: PlayLevel: Blueprint regeneration took 135 ms (1 blueprints)
+[2016.08.03-13.43.58:089][366]PIE: New page: PIE session: testMap (Aug 3, 2016, 4:43:58 PM)
+[2016.08.03-13.43.58:089][366]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_testMap
+[2016.08.03-13.43.58:097][366]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007285s)
+[2016.08.03-13.43.58:097][366]LogAIModule: Creating AISystem for world testMap
+[2016.08.03-13.43.58:097][366]LogPlayLevel: PIE: World Init took: (0.000635s)
+[2016.08.03-13.43.58:098][366]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/testMap.testMap to /Game/UEDPIE_0_testMap.testMap (0.008147s)
+[2016.08.03-13.43.58:190][366]LogWorld: Game class is 'Mode1_C'
+[2016.08.03-13.43.58:202][366]LogWorld: Bringing World /Game/UEDPIE_0_testMap.testMap up for play (max tick rate 0) at 2016.08.03-15.43.58
+[2016.08.03-13.43.58:204][366]LogWorld: Bringing up level for play took: 0.011721
+[2016.08.03-13.43.58:212][366]PIE: Info Play in editor start time for /Game/UEDPIE_0_testMap -0.912
+[2016.08.03-13.43.58:212][366]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/testMap.testMap:PersistentLevel' has LevelScriptBlueprint '/Game/testMap.testMap:PersistentLevel.testMap' with GeneratedClass '/Game/testMap.testMap_C' with ClassGeneratedBy '/Game/testMap.testMap:PersistentLevel.testMap'
+[2016.08.03-13.43.58:298][367]PIE:Warning: Warning Mobility of Collison_C_1 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.44.14:671][451]PIE:Warning: Warning Mobility of Collison_C_2 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.44.14:804][459]PIE:Warning: Warning Mobility of Collison_C_3 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.44.17:610][642]PIE:Warning: Warning Mobility of Collison_C_4 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.44.17:730][650]PIE:Warning: Warning Mobility of Collison_C_5 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.44.20:165][809]PIE:Warning: Warning Mobility of Collison_C_6 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.44.20:287][817]PIE:Warning: Warning Mobility of Collison_C_7 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.44.22:765][977]PIE:Warning: Warning Mobility of Collison_C_8 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.44.22:782][978]PIE:Warning: Warning Mobility of Collison_C_9 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.44.25:034][125]PIE:Warning: Warning Mobility of Collison_C_10 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.44.25:080][128]PIE:Warning: Warning Mobility of Collison_C_11 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.44.28:358][341]PIE:Warning: Warning Mobility of Collison_C_12 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.44.28:403][344]PIE:Warning: Warning Mobility of Collison_C_13 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.44.30:138][457]PIE:Warning: Warning Mobility of Collison_C_14 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.44.30:280][466]PIE:Warning: Warning Mobility of Collison_C_15 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.44.32:136][586]PIE:Warning: Warning Mobility of Collison_C_16 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.44.32:153][587]PIE:Warning: Warning Mobility of Collison_C_17 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.44.33:830][696]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/testMap.testMap:PersistentLevel' has LevelScriptBlueprint '/Game/testMap.testMap:PersistentLevel.testMap' with GeneratedClass '/Game/testMap.testMap_C' with ClassGeneratedBy '/Game/testMap.testMap:PersistentLevel.testMap'
+[2016.08.03-13.44.33:896][696]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/testMap.testMap:PersistentLevel' has LevelScriptBlueprint '/Game/testMap.testMap:PersistentLevel.testMap' with GeneratedClass '/Game/testMap.testMap_C' with ClassGeneratedBy '/Game/testMap.testMap:PersistentLevel.testMap'
+[2016.08.03-13.44.39:069][971]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/testMap" FILE="U:/data/PsychGame/Spielwiese/Content/testMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.08.03-13.44.41:742][971]LogSavePackage: Save=2535.10ms
+[2016.08.03-13.44.41:742][971]LogSavePackage: Moving 'U:/data/PsychGame/Spielwiese/Saved/testMapDBB15DF843DF5ED5A66E019D7DD83E5C.tmp' to 'U:/data/PsychGame/Spielwiese/Content/testMap.umap'
+[2016.08.03-13.44.41:803][971]LogSavePackage:Display: Finished SavePackage U:/data/PsychGame/Spielwiese/Content/testMap.umap
+[2016.08.03-13.46.00:024][397]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/testMap.testMap:PersistentLevel' has LevelScriptBlueprint '/Game/testMap.testMap:PersistentLevel.testMap' with GeneratedClass '/Game/testMap.testMap_C' with ClassGeneratedBy '/Game/testMap.testMap:PersistentLevel.testMap'
+[2016.08.03-13.46.00:024][397]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.03-13.46.00:024][397]PIE: New page: PIE session: testMap (Aug 3, 2016, 4:46:00 PM)
+[2016.08.03-13.46.00:025][397]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_testMap
+[2016.08.03-13.46.00:032][397]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007642s)
+[2016.08.03-13.46.00:033][397]LogAIModule: Creating AISystem for world testMap
+[2016.08.03-13.46.00:033][397]LogPlayLevel: PIE: World Init took: (0.000726s)
+[2016.08.03-13.46.00:033][397]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/testMap.testMap to /Game/UEDPIE_0_testMap.testMap (0.008609s)
+[2016.08.03-13.46.00:132][397]LogWorld: Game class is 'Mode1_C'
+[2016.08.03-13.46.00:145][397]LogWorld: Bringing World /Game/UEDPIE_0_testMap.testMap up for play (max tick rate 0) at 2016.08.03-15.46.00
+[2016.08.03-13.46.00:146][397]LogWorld: Bringing up level for play took: 0.011487
+[2016.08.03-13.46.00:154][397]PIE: Info Play in editor start time for /Game/UEDPIE_0_testMap 1.031
+[2016.08.03-13.46.00:154][397]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/testMap.testMap:PersistentLevel' has LevelScriptBlueprint '/Game/testMap.testMap:PersistentLevel.testMap' with GeneratedClass '/Game/testMap.testMap_C' with ClassGeneratedBy '/Game/testMap.testMap:PersistentLevel.testMap'
+[2016.08.03-13.46.00:155][397]PIE:Warning: Warning Mobility of Collison_C_1 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.46.03:023][585]PIE:Warning: Warning Mobility of Collison_C_2 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.46.03:176][595]PIE:Warning: Warning Mobility of Collison_C_3 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.46.05:041][718]PIE:Warning: Warning Mobility of Collison_C_4 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.46.05:104][722]PIE:Warning: Warning Mobility of Collison_C_5 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.46.07:436][876]PIE:Warning: Warning Mobility of Collison_C_6 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.46.07:605][887]PIE:Warning: Warning Mobility of Collison_C_7 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.46.09:431][  7]PIE:Warning: Warning Mobility of Collison_C_8 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.46.09:557][ 15]PIE:Warning: Warning Mobility of Collison_C_9 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.46.11:415][137]PIE:Warning: Warning Mobility of Collison_C_10 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.46.11:416][137]PIE:Warning: Warning Mobility of Collison_C_11 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.46.13:166][252]PIE:Warning: Warning Mobility of Collison_C_12 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.46.13:331][263]PIE:Warning: Warning Mobility of Collison_C_13 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. 
+[2016.08.03-13.46.14:605][347]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/testMap.testMap:PersistentLevel' has LevelScriptBlueprint '/Game/testMap.testMap:PersistentLevel.testMap' with GeneratedClass '/Game/testMap.testMap_C' with ClassGeneratedBy '/Game/testMap.testMap:PersistentLevel.testMap'
+[2016.08.03-13.46.14:661][347]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/testMap.testMap:PersistentLevel' has LevelScriptBlueprint '/Game/testMap.testMap:PersistentLevel.testMap' with GeneratedClass '/Game/testMap.testMap_C' with ClassGeneratedBy '/Game/testMap.testMap:PersistentLevel.testMap'
+[2016.08.03-13.56.17:548][371]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/testMap" FILE="U:/data/PsychGame/Spielwiese/Saved/Autosaves/Game/testMap_Auto7.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2016.08.03-13.56.19:380][371]LogSavePackage: Save=1735.38ms
+[2016.08.03-13.56.19:380][371]LogSavePackage: Moving 'U:/data/PsychGame/Spielwiese/Saved/testMap_Auto7904D71114935DB55473A81BDDC3E0A3E.tmp' to 'U:/data/PsychGame/Spielwiese/Saved/Autosaves/Game/testMap_Auto7.umap'
+[2016.08.03-13.56.19:416][371]LogSavePackage:Display: Finished SavePackage U:/data/PsychGame/Spielwiese/Saved/Autosaves/Game/testMap_Auto7.umap
+[2016.08.03-13.56.19:426][371]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/testMap' took 1.919
+[2016.08.03-13.56.19:426][371]LogFileHelpers: E

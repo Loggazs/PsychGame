@@ -1,0 +1,44 @@
+
+\begin{ganttchart}[
+hgrid =true,
+title/.append style={fill=none},
+y unit chart=1.7cm,
+title height=.5,
+title top shift=0,
+bar top shift=0.4,
+bar right shift=0.6,
+bar left shift=0.4,
+bar height=0.25,
+vgrid={*3{black, dashed},*1{dsRed},*4{black, dashed},*1{dsRed},*3{black, dashed},*1{dsRed},*3{black, dashed},*1{dsRed},*3{black, dashed}},
+newline shortcut=true,
+bar label node/.append style={align=left, text width=10em} ,
+bar/.style={
+thick, draw=dsBlue, rounded corners=1mm, fill = dsBlue!20} %, bottom color=dsBlue!60, top color = dsBlue!20, draw=dsBlue, rounded corners=1mm}
+]{1}{20}
+\gantttitle{\textbf{Woche}}{20} \\
+\gantttitle{1-2}{2}
+\gantttitle{3-4}{2}
+\gantttitle{5-6}{2}
+\gantttitle{7-8}{2}
+\gantttitle{9-10}{2}
+\gantttitle{11-12}{2}
+\gantttitle{13-14}{2}
+\gantttitle{15-16}{2}
+\gantttitle{17-18}{2}
+\gantttitle{10-20}{2}\ganttnewline
+\gantttitle{\textbf{Datum}}{20}\\
+\gantttitle{2016}{20}\\
+\gantttitle{\footnotesize  \color{dsRed} August}{4} 
+\gantttitle{\footnotesize \color{dsRed}  September}{4} 
+\gantttitle{\footnotesize  \color{dsRed} Oktober}{5} 
+\gantttitle{\footnotesize  \color{dsRed} November}{4} 
+\gantttitle{\footnotesize  \color{dsRed} Dezember}{3}\ganttnewline
+\gantttitlelist{8, 15, 22, 29, 5, 12, 19, 29, 3, 10, 17, 27, 31, 7, 14, 21, 28, 5, 12, 19}{1} \\
+\ganttbar{\small Know-How aufbauen}{1}{2} \\
+%\ganttbar[bar/.style={thick, dashed,  bottom color=dsBlue!40, top color = dsBlue!15, draw=dsBlue!60, rounded corners=1mm}]{\small }{1}{5}
+\ganttbar{\small Problemanalyse}{3}{4}\\
+\ganttbar{\small Konzept erarbeiten}{5}{10}\\
+\ganttbar{\small Umsetzung}{7}{15}\\
+\ganttbar{\small Testen}{16}{19}\\
+\ganttbar{\small Finalisierung}{19}{19}
+\end{ganttchart}

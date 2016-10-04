@@ -1,0 +1,117 @@
+\documentclass[ngermant]{scrartcl} 
+
+%Seitenränder
+\usepackage{geometry}
+\geometry{a4paper, top=1.5cm, left=2.5cm, right=2.5cm, bottom=1cm}
+
+%Schriftart
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+%Umlaute, Sonderzeichen, etc.
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel} 
+
+
+%%kopfzeile:
+\usepackage{fancyhdr} 
+\pagestyle{fancy} 
+\fancyhf{} 
+\fancyhead[L]{Arbeitsplan \Name} 
+\fancyhead[R]{Seite \thepage /\pageref{LastPage}} 
+
+\fancypagestyle{ErsteSeite}{% 
+    \fancyhf{}% 
+    \fancyhead[L]{} 
+	\renewcommand{\headrulewidth}{0pt} %Linie
+
+} 
+
+%packages
+\usepackage{lastpage}
+\usepackage{enumitem} 
+\usepackage{pgfgantt}
+\usepackage{enumitem} 
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes.arrows}
+\usepackage{array}
+\usepackage{setspace} 
+\usepackage{varwidth}
+ \usepackage{enumitem}
+\usepackage{color}
+\usepackage{hyperref}
+%Farben
+\definecolor{dsBlue}{RGB}{19, 64, 148}
+\definecolor{dsRed}{RGB}{190, 12, 46}
+
+
+%Infos:
+\newcommand{\Name}{Lukas Kemper}
+\newcommand{\Art}{Bachelorarbeit}
+\newcommand{\Matrikelnummer}{6501231}
+\newcommand{\Datum}{August 2016}
+
+\linespread{1.25}
+
+\begin{document} 
+
+\thispagestyle{ErsteSeite} 
+
+    {\Large\bfseries Arbeitsplan zur \Art\par} 
+    \vspace{1em} 
+    
+    \begin{tabular}{lp{11.8cm}} 
+     \rule{0pt}{18pt} 	\textbf{Thema:}   			 & 	Die Anwendung eines Serious Games in der Experimantalpsychologie                \\ 
+     \rule{0pt}{18pt}	\textbf{Autor:}    			& 	\Name        \\ 
+     \rule{0pt}{18pt}	\textbf{Matrikelnummer:}    	&  	\Matrikelnummer \\ 
+     \rule{0pt}{18pt}	\textbf{Datum:}          	 	&	\Datum \\
+    % \rule{0pt}{18pt}	\textbf{Unternehmen:}    		& 	%Zeile ggf. auskommentieren
+    \begin{minipage}{.3\textwidth}
+    %\includegraphics[width=0.4\textwidth]{images/dSPACE.pdf}
+    \end{minipage}
+    \end{tabular} 
+    \par\par\par
+
+    
+\section{Beschreibung der zu bearbeitenden Aufgabe}
+\label{sec:Aufgabe}
+\input{sections/Aufgabe}
+
+\section{Motivation}
+\label{sec:Motivation}
+\input{sections/Motivation}
+
+\section{Zielsetzung}
+\label{sec:Zielsetzung}
+\input{sections/Zielsetzung}
+
+\section{Vorgehensweise}
+\label{sec:Vorgehensweise}
+\input{sections/Vorgehensweise}
+
+
+\section{Vorläufige Gliederung}
+\label{sec:Gliederung}
+\input{sections/Gliederung}
+\clearpage
+\section{Zeitplan}
+\label{sec:Zeitplan}
+\input{sections/Zeitplan}
+
+%\clearpage
+%\input{sections/Umfeld}
+
+\input{sections/Betreuung}
+
+\clearpage
+
+\section{Literaturverzeichnis}
+  \vspace*{-8mm}
+\renewcommand{\refname}{}
+\renewcommand{\thepage}{}
+  \bibliography{literatur}
+\bibliographystyle{alphadinSH}
+
+
+\end{document}

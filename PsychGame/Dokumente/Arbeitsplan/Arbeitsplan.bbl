@@ -1,0 +1,64 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{DSN{\etalchar{+}}11}
+
+\bibitem[DSN{\etalchar{+}}11]{deterding2011gamification}
+\textsc{Deterding}, Sebastian; \textsc{Sicart}, Miguel; \textsc{Nacke},
+  Lennart; \textsc{O'Hara}, Kenton; \textsc{Dixon}, Dan:
+\newblock Gamification. using game-design elements in non-gaming contexts.
+\newblock {In: }\emph{CHI'11 Extended Abstracts on Human Factors in Computing
+  Systems}
+\newblock ACM, 2011
+
+\bibitem[Ful14]{fullerton2014game}
+\textsc{Fullerton}, Tracy:
+\newblock \emph{Game Design Workshop: A Playcentric Approach to Creating
+  Innovative Games}.
+\newblock CRC press, 2014
+
+\bibitem[Itt07]{Itti2007}
+\textsc{Itti}, L.:
+\newblock Visual Salience.
+\newblock {In: }\emph{Scholarpedia}
+\newblock 2 (2007), Nr. 9
+
+\bibitem[Kru13]{kruschke2013bayesian}
+\textsc{Kruschke}, John~K.:
+\newblock Bayesian estimation supersedes the t test.
+\newblock {In: }\emph{Journal of Experimental Psychology: General}
+\newblock 142 (2013), Nr. 2
+
+\bibitem[KTS16]{kruger2016fast}
+\textsc{Kr{\"u}ger}, Alexander; \textsc{T{\"u}nnermann}, Jan;
+  \textsc{Scharlau}, Ingrid:
+\newblock Fast and Conspicuous? Quantifying Salience With the Theory of Visual
+  Attention.
+\newblock {In: }\emph{Advances in Cognitive Psychology}
+\newblock 12 (2016), Nr. 1
+
+\bibitem[RVB01]{rheinberg2001fam}
+\textsc{Rheinberg}, Falko; \textsc{Vollmeyer}, Regina; \textsc{Burns},
+  Bruce~D.:
+\newblock FAM: Ein Fragebogen zur Erfassung aktueller Motivation in Lern-und
+  Leistungssituationen 12 (Langversion, 2001).
+\newblock {In: }\emph{Diagnostica}
+\newblock 2 (2001)
+
+\bibitem[RVE03]{rheinberg2003erfassung}
+\textsc{Rheinberg}, Falko; \textsc{Vollmeyer}, Regina; \textsc{Engeser},
+  Stefan:
+\newblock \emph{Die Erfassung des Flow-Erlebens}.
+\newblock na, 2003
+
+\bibitem[SJB07]{susi2007serious}
+\textsc{Susi}, Tarja; \textsc{Johannesson}, Mikael; \textsc{Backlund}, Per:
+\newblock Serious games: An overview.
+\newblock
+\newblock  (2007)
+
+\bibitem[WH08]{Wolfe2008}
+\textsc{Wolfe}, J.; \textsc{Horowitz}, T.~S.:
+\newblock Visual Search.
+\newblock {In: }\emph{Scholarpedia}
+\newblock 3 (2008), Nr. 7
+
+\end{thebibliography}

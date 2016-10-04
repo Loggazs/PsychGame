@@ -1,0 +1,157 @@
+\begin{figure}
+\begin{tikzpicture} [
+    auto,
+    decision/.style = { diamond, draw=dsRed, thick, fill=dsRed,
+                        text width=1em, text badly centered,
+                        inner sep=0.00pt , font=\footnotesize},
+    block/.style    = { rectangle, thick, draw=gray!50!black,
+    				text width=12em, text centered,
+                        rounded corners, minimum height=2em, font=\footnotesize},
+    line/.style     = { draw, thick, ->, shorten >=2pt , font=\footnotesize},
+  ]
+
+%Knoten innerhalb einer Matrix
+
+%Knotenbenennung Zahl = Zeile; a=links, b = mitte, c = rechts
+  \matrix [column sep=2mm, 
+		row sep=4mm
+		] {
+                    \node [text centered] () {\textbf{Phasen / Meilensteine}};  
+                    	& \node [text centered] () {\textbf{Aufgaben / Methoden}};            
+                    		& \node [text centered] () {\textbf{Resultate}};  \\
+                   \node [block](1a) {Know-How aufbauen \"uber
+					\begin{itemize} 
+ 					\item Unreal Engine
+					\item Psychologische Grundlagen
+					\item Flow/Motivation
+					\item Statistische Analyse
+					\end{itemize}};    
+                   	          &                             
+			&\\
+		\node[text centered, minimum height=2mm](99){};
+			&
+			& \\
+		\node [decision] (2a) {\textcolor{white}{1}};
+			& 
+				& \node [block,  draw=dsBlue, fill = dsBlue!20] 
+				 		(2b) {Grundlagenwissen};   \\
+
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+		\node[block](7a){Experimentanalyse};
+		           &                             
+			&\\
+		\node[text centered, minimum height=2mm](99){};
+			&
+			&\\
+		\node [decision] (8a){\textcolor{white}{2}};
+			&
+				& \node [block, draw=dsBlue, fill = dsBlue!20]
+				 		 (8b) {Anforderungskatalog};\\
+
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%\node[block](9a){Recherche bzgl. des Standes der Technik};
+		%	&
+		%		&\\
+		%\node [decision] (10a){\textcolor{white}{5}};
+		%	&
+		%		& \node [block, draw=dsBlue, fill = dsBlue!20]
+		%		 		(10b) {\"Uberblick \"uber den aktuellen Stand der Techniken};\\
+
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\node[block](11a){Konzept erarbeiten};
+			&
+				&\\
+		\node[text centered, minimum height=2mm](99){};
+			&
+				&\\
+		\node [decision] (12a){\textcolor{white}{3}};
+			&
+				& \node [block, draw=dsBlue, fill = dsBlue!20] 
+				 		(12b) {Game Design};\\
+
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\node[block](13a){Umsetzung};
+			&
+				&\\
+		\node [decision] (14a){\textcolor{white}{4}};
+			&
+				& \node [block, draw=dsBlue, fill = dsBlue!20] 
+				 		(14b) {Game Prototyp};\\
+
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\node[block](15a){Testen};
+			&
+				&\\
+			\node[text centered, minimum height=2mm](99){};
+			&
+				& \\
+		\node [decision] (16a){\textcolor{white}{5}};
+			&
+				& \node [block, draw=dsBlue, fill = dsBlue!20] 
+				 		(16b) {Bewertung};\\
+  };
+
+
+%rote Pfeile (von Meilenstein zu Resultat)
+  \begin{scope} [every path/.style={line, draw=dsRed}]
+
+   \path (2a)  -- node [] {\parbox{4cm}{
+					\begin{tabular}{ll}
+					$\bullet$ &Fachliteratur \\
+					$\bullet$ &Anwendung
+					\end{tabular}
+					}} (2b);
+
+   \path (8a) -- node [] {\parbox{4cm}{
+					\begin{tabular}{ll}
+					$\bullet$ &Experimentparameter \\
+					$\bullet$ &Experteninterviews
+					\end{tabular}
+					}} (8b);
+
+% \path (10a) -- node [] {\parbox{4cm}{
+%					\begin{tabular}{ll}
+%					$\bullet$ &Fachliteratur
+%					\end{tabular}
+%					}} (10b);
+
+   \path (12a) -- node [] {\parbox{4cm}{
+					\begin{tabular}{ll}
+					$\bullet$ &Fachliteratur\\ 
+					$\bullet$ & Anforderungskatalog 
+					\end{tabular}
+					}} (12b);
+
+   \path (14a) -- node [] {\parbox{4cm}{
+					\begin{tabular}{ll}
+					$\bullet$&Programmieren
+					\end{tabular}
+					}} (14b);
+
+   \path (16a) -- node [] {\parbox{4cm}{
+					\begin{tabular}{ll}
+					$\bullet$&User Tests\\
+					$\bullet$&Statistische Analyse
+					\end{tabular}
+					}} (16b);
+  \end{scope}
+
+%schwarze Pfeile (zwischen Meilensteinen)
+  \begin{scope} [every path/.style={line, draw=black}]
+   \path (1a) -- (2a);
+   \path (2a) -- (7a);
+   \path (7a) -- (8a);
+   \path (8a) -- (11a);
+  % \path (9a) -- (10a);
+  % \path (10a) -- (11a);
+   \path (11a) -- (12a);
+   \path (12a) -- (13a);
+   \path (13a) -- (14a);
+   \path (14a) -- (15a);
+   \path (15a) -- (16a);
+  \end{scope}
+\end{tikzpicture}
+\caption{Phasen-Meilenstein-Diagramm}
+\label{fig:PhasenMeilensteinDiagramm}
+\end{figure}

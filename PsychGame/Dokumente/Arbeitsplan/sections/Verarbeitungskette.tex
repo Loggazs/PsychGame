@@ -1,0 +1,41 @@
+
+\begin{figure}[h!]
+\begin{tikzpicture} [
+    auto,
+    decision/.style = { diamond, draw=dsRed, thick, fill=dsRed!80,
+                        text width=1em, text badly centered,
+                        inner sep=0.00pt , font=\footnotesize},
+    block/.style    = { rectangle, thick, 
+    				text width=12em, text centered,text width=2.7cm, draw=dsBlue, fill = dsBlue!20,
+                       		 rounded corners, minimum height=7em, font=\footnotesize},
+    line/.style     = { draw, thick, ->, shorten >=2pt , font=\footnotesize},
+  ]
+
+
+  \matrix [column sep=0.8cm, row sep=9mm] {
+                  
+                   	\node [block ](1) {\textbf{Kamera} \singlespace Mono-, Stereo- oder Nachtsichtkamera};    
+                   	&            
+		\node [block](2) {\textbf{Bildverarbeitung} \\ Objekterkennung und Tracking };                        
+				 &
+		\node [block](3) {\textbf{Regelalgorithmus} \\ z. B. der Lichtverteilung oder der Notbremsung};       
+				 &
+		\node [block](4) {\textbf{Aktuator} \\ z. B. der Scheinwerfer oder Bremsen};      
+
+
+
+ \\
+  };
+  % connect all nodes defined above
+
+  % connect all nodes defined above
+  \begin{scope} [every path/.style={line, draw=black}]
+   \path[latex-latex, ultra thick, dsRed] (1) -- (2);
+   \path[latex-latex, ultra thick, dsRed]  (2) -- (3);
+   \path[latex-latex, ultra thick, dsRed]  (3) -- (4);
+  \end{scope}
+
+\end{tikzpicture}
+\caption{Verarbeitungskette kamerabasierter Systeme}
+  \label{fig:Verarbeitungskette}
+\end{figure}

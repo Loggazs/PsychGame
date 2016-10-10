@@ -1,9 +1,9 @@
-﻿Log file open, 10/06/16 11:15:12
+﻿Log file open, 10/10/16 13:08:04
 LogInit:Display: Running engine for game: PsyychGame2
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(-527666269) SRandInit(-527666267).
+LogInit:Display: RandInit(1233615112) SRandInit(1233615114).
 LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.137832
+LogStats: Stats thread started at 0.079617
 LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
 LogInit: API Version: 2992821
 LogInit: Net Version: 3039270
@@ -25,7 +25,7 @@ LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
 LogInit: Compiled with Visual C++: 19.00.23026.00
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.12
-LogInit: Command line:  
+LogInit: Command line: -EpicPortal 
 LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogInit: Using libcurl 7.41.0
@@ -44,620 +44,136 @@ LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
 LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2016.10.06-09.15.12:401][  0]LogInit: Selected Device Profile: [Windows]
-[2016.10.06-09.15.12:401][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.10.06-09.15.12:458][  0]LogInit: Computer: NBC-PC
-[2016.10.06-09.15.12:458][  0]LogInit: User: MBC
-[2016.10.06-09.15.12:458][  0]LogInit: CPU Page size=65536, Cores=4
-[2016.10.06-09.15.12:458][  0]LogInit: High frequency timer resolution =2.338439 MHz
-[2016.10.06-09.15.12:458][  0]LogMemory: Memory total: Physical=7.7GB (8GB approx)
-[2016.10.06-09.15.12:458][  0]LogMemory: Platform Memory Stats for Windows
-[2016.10.06-09.15.12:458][  0]LogMemory: Process Physical Memory: 191.10 MB used, 191.10 MB peak
-[2016.10.06-09.15.12:459][  0]LogMemory: Process Virtual Memory: 195.25 MB used, 195.25 MB peak
-[2016.10.06-09.15.12:459][  0]LogMemory: Physical Memory: 3591.76 MB used, 7888.79 MB total
-[2016.10.06-09.15.12:459][  0]LogMemory: Virtual Memory: 553.76 MB used, 134217728.00 MB total
-[2016.10.06-09.15.12:869][  0]LogTextLocalizationManager: No translations for ('de-DE') exist, falling back to 'en' for localization and internationalization data.
-[2016.10.06-09.15.14:165][  0]LogD3D11RHI: D3D11 adapters:
-[2016.10.06-09.15.14:280][  0]LogD3D11RHI:    0. 'NVIDIA NVS 5400M' (Feature Level 11_0)
-[2016.10.06-09.15.14:280][  0]LogD3D11RHI:       978/0/3944 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2016.10.06-09.15.14:290][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4000' (Feature Level 11_0)
-[2016.10.06-09.15.14:290][  0]LogD3D11RHI:       32/0/1760 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
-[2016.10.06-09.15.14:294][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2016.10.06-09.15.14:294][  0]LogD3D11RHI:       0/0/3944 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2016.10.06-09.15.14:294][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2016.10.06-09.15.14:305][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2016.10.06-09.15.14:305][  0]LogD3D11RHI:     GPU DeviceId: 0xdef (for the marketing name, search the web for "GPU Device Id")
-[2016.10.06-09.15.14:305][  0]LogWindows: EnumDisplayDevices:
-[2016.10.06-09.15.14:305][  0]LogWindows:    0. 'Intel(R) HD Graphics 4000' (P:1 D:1)
-[2016.10.06-09.15.14:306][  0]LogWindows:    1. 'Intel(R) HD Graphics 4000' (P:0 D:0)
-[2016.10.06-09.15.14:307][  0]LogWindows:    2. 'Intel(R) HD Graphics 4000' (P:0 D:0)
-[2016.10.06-09.15.14:307][  0]LogWindows:    3. 'NVIDIA NVS 5400M' (P:0 D:0)
-[2016.10.06-09.15.14:308][  0]LogWindows:    4. 'NVIDIA NVS 5400M' (P:0 D:0)
-[2016.10.06-09.15.14:308][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:2 
-[2016.10.06-09.15.14:308][  0]LogD3D11RHI:     Adapter Name: NVIDIA NVS 5400M
-[2016.10.06-09.15.14:308][  0]LogD3D11RHI:   Driver Version: 369.09 (internal:21.21.13.6909, unified:369.09)
-[2016.10.06-09.15.14:308][  0]LogD3D11RHI:      Driver Date: 8-1-2016
-[2016.10.06-09.15.14:308][  0]LogRHI: Texture pool is 684 MB (70% of 978 MB)
-[2016.10.06-09.15.14:340][  0]LogD3D11RHI: Async texture creation enabled
-[2016.10.06-09.15.14:400][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2016.10.06-09.15.14:416][  0]LogShaderCompilers: Guid format shader working directory is -25 characters bigger than the processId version (../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Intermediate/Shaders/WorkingDirectory/8784/).
-[2016.10.06-09.15.14:416][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/MBC/AppData/Local/Temp/UnrealShaderWorkingDir/5607A3A64F5D79D6EA762284AB9EF9E1/'.
-[2016.10.06-09.15.14:417][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.10.06-09.15.20:680][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.10.06-09.15.20:708][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.10.06-09.15.20:736][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.10.06-09.15.20:765][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.10.06-09.15.20:793][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.10.06-09.15.20:828][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.10.06-09.15.20:856][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.10.06-09.15.20:881][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.10.06-09.15.20:910][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.10.06-09.15.20:937][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.10.06-09.15.20:963][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.10.06-09.15.21:016][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.10.06-09.15.21:016][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.10.06-09.15.21:019][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.10.06-09.15.21:140][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.10.06-09.15.21:164][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2016.10.06-09.15.21:190][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.10.06-09.15.21:214][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.10.06-09.15.21:248][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.10.06-09.15.21:248][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.10.06-09.15.22:206][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.10.06-09.15.22:696][  0]LogDerivedDataCache: Loaded boot cache 0.49s 48MB C:/Users/MBC/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
-[2016.10.06-09.15.22:697][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/MBC/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
-[2016.10.06-09.15.22:698][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.10.06-09.15.22:698][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.10.06-09.15.22:698][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.10.06-09.15.22:698][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.10.06-09.15.22:764][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.10.06-09.15.22:780][  0]LogDerivedDataCache: Using Local data cache path C:/Users/MBC/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.10.06-09.15.30:858][  0]LogInit: Selected Device Profile: [Windows]
-[2016.10.06-09.15.30:867][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2016.10.06-09.15.31:877][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.10.06-09.15.31:877][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.10.06-09.15.31:877][  0]LogMeshUtilities: No distributed automatic mesh merging module available
-[2016.10.06-09.15.33:128][  0]LogAssetRegistry: FAssetRegistry took 0.0243 seconds to start up
-[2016.10.06-09.15.33:158][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.023024 seconds
-[2016.10.06-09.15.33:169][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
-[2016.10.06-09.15.33:169][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
-[2016.10.06-09.15.33:169][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2016.10.06-09.15.33:179][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.10.06-09.15.34:311][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2016.10.06-09.15.34:311][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2016.10.06-09.15.40:305][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.10.06-09.15.41:069][  0]SourceControl: Info Source control is disabled
-[2016.10.06-09.15.41:417][  0]SourceControl: Info Source control is disabled
-[2016.10.06-09.15.41:444][  0]SourceControl: Info Source control is disabled
-[2016.10.06-09.15.41:472][  0]SourceControl: Info Source control is disabled
-[2016.10.06-09.15.42:191][  0]LogEngine: Initializing Engine...
-[2016.10.06-09.15.42:280][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2016.10.06-09.15.42:284][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2016.10.06-09.15.42:762][  0]LogAIModule: Creating AISystem for world NewWorld
-[2016.10.06-09.15.42:792][  0]LogInit: XAudio2 using 'Lautsprecher/Kopfhörer (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.10.06-09.15.42:843][  0]LogInit: FAudioDevice initialized.
-[2016.10.06-09.15.42:910][  0]LogDerivedDataCache: Saved boot cache 0.07s 48MB C:/Users/MBC/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
-[2016.10.06-09.15.42:928][  0]LogInit: Texture streaming: Enabled
-[2016.10.06-09.15.43:010][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.10.06-09.15.43:130][  0]LogInit: Transaction tracking system initialized
-[2016.10.06-09.15.43:238][  0]BlueprintLog: New page: Editor Load
-[2016.10.06-09.15.43:590][  0]LocalizationService: Info Localization service is disabled
-[2016.10.06-09.15.44:386][  0]LogConsoleResponse:Display: 
-[2016.10.06-09.15.45:082][  0]LogCook:Display: Max memory allowance for cook 8192mb
-[2016.10.06-09.15.45:082][  0]LogCook:Display: Mobile HDR setting 1
-[2016.10.06-09.15.45:550][  0]LogFileCache: Scanning file cache for directory 'C:/Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/' took 0.02s
-[2016.10.06-09.15.45:551][  0]SourceControl: Info Source control is disabled
-[2016.10.06-09.15.45:555][  0]Cmd: MAP LOAD FILE="../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/allTheRocks.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.10.06-09.15.45:558][  0]LightingResults: New page: Lighting Build
-[2016.10.06-09.15.45:589][  0]MapCheck: New page: Map Check
-[2016.10.06-09.15.45:589][  0]LightingResults: New page: Lighting Build
-[2016.10.06-09.15.49:794][  0]LogTexture:Display: Building textures: pandas-live_64dff22c2fe56e9 (BGRA8)
-[2016.10.06-09.15.49:965][  0]LogMaterial: Missing cached shader map for material M_panda, compiling. 
-[2016.10.06-09.15.50:227][  0]LogMaterial: Missing cached shader map for material goldenGlow, compiling. 
-[2016.10.06-09.15.50:925][  0]LogAIModule: Creating AISystem for world allTheRocks
-[2016.10.06-09.15.52:163][  0]LogEditorServer: Finished looking for orphan Actors (0.001 secs)
-[2016.10.06-09.15.52:172][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.10.06-09.15.52:396][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 223.655ms to complete.
-[2016.10.06-09.15.52:396][  0]LogFileHelpers: Loading map 'allTheRocks' took 6.844
-[2016.10.06-09.15.53:443][  0]LogCollectionManager: Loaded 0 collections in 0.006523 seconds
-[2016.10.06-09.15.53:547][  0]LogFileCache: Scanning file cache for directory 'C:/Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Saved/Collections/' took 0.02s
-[2016.10.06-09.15.53:547][  0]LogFileCache: Scanning file cache for directory 'C:/Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/Developers/MBC/Collections/' took 0.01s
-[2016.10.06-09.15.53:547][  0]LogFileCache: Scanning file cache for directory 'C:/Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/Collections/' took 0.01s
-[2016.10.06-09.15.53:547][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000009 seconds
-[2016.10.06-09.15.53:601][  0]LogContentBrowser: Native class hierarchy populated in 0.0503 seconds. Added 2047 classes and 369 folders.
-[2016.10.06-09.15.53:625][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2016.10.06-09.15.53:626][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2016.10.06-09.15.53:629][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0021 seconds. Added 12 classes and 0 folders.
-[2016.10.06-09.15.53:653][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0016 seconds. Added 0 classes and 0 folders.
-[2016.10.06-09.15.54:813][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0017 seconds. Added 0 classes and 0 folders.
-[2016.10.06-09.15.54:844][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0017 seconds. Added 1 classes and 2 folders.
-[2016.10.06-09.15.55:331][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.10.06-09.15.55:370][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2016.10.06-09.15.55:419][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0017 seconds. Added 1 classes and 2 folders.
-[2016.10.06-09.15.55:420][  0]LogLoad: Full Startup: 46.61 seconds (BP compile: 1.21 seconds)
-[2016.10.06-09.15.55:420][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2016.10.06-09.15.55:420][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2016.10.06-09.15.55:443][  0]LogOcInput: OculusInput pre-init called
-[2016.10.06-09.15.55:511][  0]LogContentStreaming: Texture pool size now 200 MB
-[2016.10.06-09.15.55:843][  0]LogRenderer: Reallocating scene render targets to support 256x256 (Frame:1).
-[2016.10.06-09.15.56:077][  0]LogRenderer: Reallocating scene render targets to support 1140x384 (Frame:2).
-[2016.10.06-09.15.56:401][  1]Cmd: UpdateLandscapeEditorData -warnings
-[2016.10.06-09.15.56:424][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/' took 0.96s
-[2016.10.06-09.15.56:433][  1]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors2 out of bounds [0/0]!
-
-[2016.10.06-09.15.56:434][  1]LogScript:Warning: Accessed None trying to read property CallFunc_Array_Get_Item2
-	Rock_C /Engine/Transient.World_0:PersistentLevel.Rock_C_0
-	Function /Game/Blueprints/Rock.Rock_C:ExecuteUbergraph_Rock:05B7
-[2016.10.06-09.15.57:337][  7]LogAssetRegistry: Asset discovery search completed in 24.2304 seconds
-[2016.10.06-09.15.57:337][  7]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2016.10.06-09.15.57:339][  7]LogCollectionManager: Fixed up redirectors for 0 collections in 0.001729 seconds (updated 0 objects)
-[2016.10.06-09.16.27:023][294]LogSynthBenchmark:Display: FSynthBenchmark (V0.95):  requested WorkScale=5.00
-[2016.10.06-09.16.27:023][294]LogSynthBenchmark:Display: ===============
-[2016.10.06-09.16.27:023][294]LogSynthBenchmark:Display: Main Processor:
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display:          ... 0.060838 s/Run 'RayIntersect'
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display:          ... 0.064898 s/Run 'Fractal'
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display: 
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display:   CompiledTarget_x_Bits: 64
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display:   UE_BUILD_SHIPPING: 0
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display:   UE_BUILD_TEST: 0
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display:   UE_BUILD_DEBUG: 0
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display:   TotalPhysicalGBRam: 8
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display:   NumberOfCores (physical): 4
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display:   NumberOfCores (logical): 8
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display:   CPU Perf Index 0: 42.1 (weight 1.00)
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display:   CPU Perf Index 1: 44.1 (weight 1.50)
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display:  
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display: Graphics:
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display:   Adapter Name: 'NVIDIA NVS 5400M'
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display:   (On Optimus the name might be wrong, memory should be ok)
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display:   Vendor Id: 0x10de
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display:   Device Id: 0xdef
-[2016.10.06-09.16.27:652][294]LogSynthBenchmark:Display:   GPU Memory: 979/0/3945 MB
-[2016.10.06-09.16.27:697][294]LogSynthBenchmark:Display:   GPU first test: 0.02s
-[2016.10.06-09.16.27:697][294]LogSynthBenchmark:Display:          ... 0.470 GigaPix/s, Confidence=100% 'ALUHeavyNoise' (likely to be very inaccurate)
-[2016.10.06-09.16.27:697][294]LogSynthBenchmark:Display:          ... 0.528 GigaPix/s, Confidence=100% 'TexHeavy' (likely to be very inaccurate)
-[2016.10.06-09.16.27:697][294]LogSynthBenchmark:Display:          ... 0.367 GigaPix/s, Confidence=100% 'DepTexHeavy' (likely to be very inaccurate)
-[2016.10.06-09.16.27:697][294]LogSynthBenchmark:Display:          ... 1.404 GigaPix/s, Confidence=100% 'FillOnly' (likely to be very inaccurate)
-[2016.10.06-09.16.27:697][294]LogSynthBenchmark:Display:          ... 0.085 GigaPix/s, Confidence=100% 'Bandwidth' (likely to be very inaccurate)
-[2016.10.06-09.16.27:865][294]LogSynthBenchmark:Display:   GPU second test: 0.15s
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:          ... 0.578 GigaPix/s, Confidence=100% 'ALUHeavyNoise' (likely to be inaccurate)
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:          ... 0.672 GigaPix/s, Confidence=100% 'TexHeavy' (likely to be inaccurate)
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:          ... 0.413 GigaPix/s, Confidence=100% 'DepTexHeavy' (likely to be inaccurate)
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:          ... 2.528 GigaPix/s, Confidence=100% 'FillOnly' (likely to be inaccurate)
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:          ... 0.083 GigaPix/s, Confidence=100% 'Bandwidth' (likely to be inaccurate)
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:          ... 0.578 GigaPix/s, Confidence=100% 'ALUHeavyNoise'
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:          ... 0.672 GigaPix/s, Confidence=100% 'TexHeavy'
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:          ... 0.413 GigaPix/s, Confidence=100% 'DepTexHeavy'
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:          ... 2.528 GigaPix/s, Confidence=100% 'FillOnly'
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:          ... 0.083 GigaPix/s, Confidence=100% 'Bandwidth'
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display: 
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:   GPU Perf Index 0: 12.6 (weight 1.00)
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:   GPU Perf Index 1: 9.0 (weight 0.10)
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:   GPU Perf Index 2: 10.7 (weight 0.10)
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:   GPU Perf Index 3: 9.9 (weight 3.00)
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:   GPU Perf Index 4: 7.7 (weight 1.00)
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:   CPUIndex: 43.3
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:   GPUIndex: 10.0
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display: 
-[2016.10.06-09.16.27:866][294]LogSynthBenchmark:Display:          ... Total Time: 0.843562 sec
-[2016.10.06-09.27.11:118][312]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0023 seconds. Added 111 classes and 0 folders.
-[2016.10.06-09.39.09:199][144]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 ../../../../../../Users/MBC/Desktop/globePic.png)
-[2016.10.06-09.39.09:203][144]LogTexture:Display: Building textures: globePic (AutoDXT)
-[2016.10.06-09.45.27:989][407]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage
-[2016.10.06-09.45.27:989][407]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_3.GoldenSphereStorage
-[2016.10.06-09.45.27:989][407]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_3.WidgetTree_3.GoldenSphereStorage
-[2016.10.06-09.45.27:989][407]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_4.GoldenSphereStorage
-[2016.10.06-09.45.27:989][407]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_4.WidgetTree_4.GoldenSphereStorage
-[2016.10.06-09.45.27:989][407]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_5.GoldenSphereStorage
-[2016.10.06-09.45.27:989][407]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_5.WidgetTree_5.GoldenSphereStorage
-[2016.10.06-09.45.27:989][407]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_4.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.27:989][407]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Engine/Transient.World_3:Hud_C_4.WidgetTree_4.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.27:989][407]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_5.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.27:989][407]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Engine/Transient.World_3:Hud_C_5.WidgetTree_5.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.27:989][407]LogProperty:Warning: Illegal TEXT reference to a private object in external package (GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0) from referencer (Image /Engine/UMG/Editor/Transient.Image_0).  Import failed...
-[2016.10.06-09.45.27:989][407]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'GridSlot'GoldenSphereStorage.GridSlot_0''
-[2016.10.06-09.45.28:995][461]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage
-[2016.10.06-09.45.28:995][461]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_3.GoldenSphereStorage
-[2016.10.06-09.45.28:995][461]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_3.WidgetTree_3.GoldenSphereStorage
-[2016.10.06-09.45.28:995][461]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_4.GoldenSphereStorage
-[2016.10.06-09.45.28:995][461]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_4.WidgetTree_4.GoldenSphereStorage
-[2016.10.06-09.45.28:995][461]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_5.GoldenSphereStorage
-[2016.10.06-09.45.28:995][461]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_5.WidgetTree_5.GoldenSphereStorage
-[2016.10.06-09.45.28:995][461]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_6.GoldenSphereStorage
-[2016.10.06-09.45.28:995][461]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_6.WidgetTree_6.GoldenSphereStorage
-[2016.10.06-09.45.28:995][461]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_4.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.28:995][461]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Engine/Transient.World_3:Hud_C_4.WidgetTree_4.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.28:995][461]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_5.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.28:995][461]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Engine/Transient.World_3:Hud_C_5.WidgetTree_5.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.28:995][461]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_6.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.28:995][461]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Engine/Transient.World_3:Hud_C_6.WidgetTree_6.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.28:995][461]LogProperty:Warning: Illegal TEXT reference to a private object in external package (GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0) from referencer (Image /Engine/UMG/Editor/Transient.Image_0).  Import failed...
-[2016.10.06-09.45.28:995][461]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'GridSlot'GoldenSphereStorage.GridSlot_0''
-[2016.10.06-09.45.29:257][473]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage
-[2016.10.06-09.45.29:257][473]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_3.GoldenSphereStorage
-[2016.10.06-09.45.29:257][473]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_3.WidgetTree_3.GoldenSphereStorage
-[2016.10.06-09.45.29:257][473]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_4.GoldenSphereStorage
-[2016.10.06-09.45.29:257][473]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_4.WidgetTree_4.GoldenSphereStorage
-[2016.10.06-09.45.29:258][473]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_5.GoldenSphereStorage
-[2016.10.06-09.45.29:258][473]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_5.WidgetTree_5.GoldenSphereStorage
-[2016.10.06-09.45.29:258][473]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_6.GoldenSphereStorage
-[2016.10.06-09.45.29:258][473]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_6.WidgetTree_6.GoldenSphereStorage
-[2016.10.06-09.45.29:258][473]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_7.GoldenSphereStorage
-[2016.10.06-09.45.29:258][473]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_7.WidgetTree_7.GoldenSphereStorage
-[2016.10.06-09.45.29:258][473]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_4.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:258][473]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Engine/Transient.World_3:Hud_C_4.WidgetTree_4.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:258][473]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_5.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:258][473]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Engine/Transient.World_3:Hud_C_5.WidgetTree_5.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:258][473]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_6.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:258][473]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Engine/Transient.World_3:Hud_C_6.WidgetTree_6.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:258][473]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_7.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:258][473]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Engine/Transient.World_3:Hud_C_7.WidgetTree_7.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:258][473]LogProperty:Warning: Illegal TEXT reference to a private object in external package (GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0) from referencer (Image /Engine/UMG/Editor/Transient.Image_0).  Import failed...
-[2016.10.06-09.45.29:258][473]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'GridSlot'GoldenSphereStorage.GridSlot_0''
-[2016.10.06-09.45.29:464][481]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage
-[2016.10.06-09.45.29:464][481]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_3.GoldenSphereStorage
-[2016.10.06-09.45.29:464][481]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_3.WidgetTree_3.GoldenSphereStorage
-[2016.10.06-09.45.29:464][481]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_4.GoldenSphereStorage
-[2016.10.06-09.45.29:464][481]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_4.WidgetTree_4.GoldenSphereStorage
-[2016.10.06-09.45.29:464][481]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_5.GoldenSphereStorage
-[2016.10.06-09.45.29:464][481]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_5.WidgetTree_5.GoldenSphereStorage
-[2016.10.06-09.45.29:464][481]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_6.GoldenSphereStorage
-[2016.10.06-09.45.29:464][481]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_6.WidgetTree_6.GoldenSphereStorage
-[2016.10.06-09.45.29:464][481]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_7.GoldenSphereStorage
-[2016.10.06-09.45.29:465][481]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_7.WidgetTree_7.GoldenSphereStorage
-[2016.10.06-09.45.29:465][481]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_8.GoldenSphereStorage
-[2016.10.06-09.45.29:465][481]LogUObjectHash:Warning: Ambiguous search, could be GridPanel /Engine/Transient.World_3:Hud_C_2.WidgetTree_2.GoldenSphereStorage or GridPanel /Engine/Transient.World_3:Hud_C_8.WidgetTree_8.GoldenSphereStorage
-[2016.10.06-09.45.29:465][481]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_4.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:465][481]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Engine/Transient.World_3:Hud_C_4.WidgetTree_4.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:465][481]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_5.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:465][481]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Engine/Transient.World_3:Hud_C_5.WidgetTree_5.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:465][481]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_6.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:465][481]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Engine/Transient.World_3:Hud_C_6.WidgetTree_6.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:465][481]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_7.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:465][481]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Engine/Transient.World_3:Hud_C_7.WidgetTree_7.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:465][481]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Game/Blueprints/UI/Hud.Hud_C:WidgetTree_8.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:465][481]LogUObjectHash:Warning: Ambiguous search, could be GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0 or GridSlot /Engine/Transient.World_3:Hud_C_8.WidgetTree_8.GoldenSphereStorage.GridSlot_0
-[2016.10.06-09.45.29:465][481]LogProperty:Warning: Illegal TEXT reference to a private object in external package (GridSlot /Game/Blueprints/UI/Hud.Hud:WidgetTree.GoldenSphereStorage.GridSlot_0) from referencer (Image /Engine/UMG/Editor/Transient.Image_0).  Import failed...
-[2016.10.06-09.45.29:465][481]LogProperty:Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'GridSlot'GoldenSphereStorage.GridSlot_0''
-[2016.10.06-09.52.23:512][898]BlueprintLog: New page: Compile Hud
-[2016.10.06-09.52.23:836][898]BlueprintEditorCompileResults: Info [2235.02] Compile of Hud successful! [in 323 ms] (/Game/Blueprints/UI/Hud.Hud)
-[2016.10.06-09.52.27:191][177]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/allTheRocks.allTheRocks:PersistentLevel' has LevelScriptBlueprint '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks' with GeneratedClass '/Game/allTheRocks.allTheRocks_C' with ClassGeneratedBy '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks'
-[2016.10.06-09.52.27:191][177]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.10.06-09.52.27:206][177]PIE: New page: PIE session: allTheRocks (Oct 6, 2016, 12:52:27 PM)
-[2016.10.06-09.52.27:206][177]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_allTheRocks
-[2016.10.06-09.52.27:235][177]LogPlayLevel: PIE: StaticDuplicateObject took: (0.029392s)
-[2016.10.06-09.52.27:236][177]LogAIModule: Creating AISystem for world allTheRocks
-[2016.10.06-09.52.27:236][177]LogPlayLevel: PIE: World Init took: (0.000890s)
-[2016.10.06-09.52.27:237][177]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/allTheRocks.allTheRocks to /Game/UEDPIE_0_allTheRocks.allTheRocks (0.030959s)
-[2016.10.06-09.52.27:257][177]LogInit: XAudio2 using 'Lautsprecher/Kopfhörer (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.10.06-09.52.27:268][177]LogInit: FAudioDevice initialized.
-[2016.10.06-09.52.27:427][177]LogWorld: Game class is 'Mode1_C'
-[2016.10.06-09.52.27:448][177]LogWorld: Bringing World /Game/UEDPIE_0_allTheRocks.allTheRocks up for play (max tick rate 0) at 2016.10.06-11.52.27
-[2016.10.06-09.52.27:454][177]LogWorld: Bringing up level for play took: 0.018748
-[2016.10.06-09.52.27:481][177]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0010 seconds. Added 11 classes and 0 folders.
-[2016.10.06-09.52.27:726][177]PIE: Info Play in editor start time for /Game/UEDPIE_0_allTheRocks 0.516
-[2016.10.06-09.52.27:726][177]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/allTheRocks.allTheRocks:PersistentLevel' has LevelScriptBlueprint '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks' with GeneratedClass '/Game/allTheRocks.allTheRocks_C' with ClassGeneratedBy '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks'
-[2016.10.06-09.52.41:801][ 80]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/allTheRocks.allTheRocks:PersistentLevel' has LevelScriptBlueprint '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks' with GeneratedClass '/Game/allTheRocks.allTheRocks_C' with ClassGeneratedBy '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks'
-[2016.10.06-09.52.41:861][ 80]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/allTheRocks.allTheRocks:PersistentLevel' has LevelScriptBlueprint '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks' with GeneratedClass '/Game/allTheRocks.allTheRocks_C' with ClassGeneratedBy '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks'
-[2016.10.06-09.53.18:614][194]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/allTheRocks.allTheRocks:PersistentLevel' has LevelScriptBlueprint '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks' with GeneratedClass '/Game/allTheRocks.allTheRocks_C' with ClassGeneratedBy '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks'
-[2016.10.06-09.53.18:614][194]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.10.06-09.53.18:614][194]PIE: New page: PIE session: allTheRocks (Oct 6, 2016, 12:53:18 PM)
-[2016.10.06-09.53.18:614][194]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_allTheRocks
-[2016.10.06-09.53.18:635][194]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020867s)
-[2016.10.06-09.53.18:636][194]LogAIModule: Creating AISystem for world allTheRocks
-[2016.10.06-09.53.18:636][194]LogPlayLevel: PIE: World Init took: (0.000649s)
-[2016.10.06-09.53.18:636][194]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/allTheRocks.allTheRocks to /Game/UEDPIE_0_allTheRocks.allTheRocks (0.021738s)
-[2016.10.06-09.53.18:659][194]LogInit: XAudio2 using 'Lautsprecher/Kopfhörer (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.10.06-09.53.18:670][194]LogInit: FAudioDevice initialized.
-[2016.10.06-09.53.18:720][194]LogWorld: Game class is 'Mode1_C'
-[2016.10.06-09.53.18:732][194]LogWorld: Bringing World /Game/UEDPIE_0_allTheRocks.allTheRocks up for play (max tick rate 0) at 2016.10.06-11.53.18
-[2016.10.06-09.53.18:733][194]LogWorld: Bringing up level for play took: 0.011929
-[2016.10.06-09.53.18:930][194]PIE: Info Play in editor start time for /Game/UEDPIE_0_allTheRocks -0.281
-[2016.10.06-09.53.18:930][194]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/allTheRocks.allTheRocks:PersistentLevel' has LevelScriptBlueprint '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks' with GeneratedClass '/Game/allTheRocks.allTheRocks_C' with ClassGeneratedBy '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks'
-[2016.10.06-09.53.23:570][490]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/allTheRocks.allTheRocks:PersistentLevel' has LevelScriptBlueprint '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks' with GeneratedClass '/Game/allTheRocks.allTheRocks_C' with ClassGeneratedBy '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks'
-[2016.10.06-09.53.23:624][490]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/allTheRocks.allTheRocks:PersistentLevel' has LevelScriptBlueprint '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks' with GeneratedClass '/Game/allTheRocks.allTheRocks_C' with ClassGeneratedBy '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks'
-[2016.10.06-09.56.23:493][859]BlueprintLog: New page: Compile goldenBall
-[2016.10.06-09.56.23:617][859]BlueprintEditorCompileResults: Info [2474.81] Compile of goldenBall successful! [in 123 ms] (/Game/Blueprints/goldenGlobe/goldenBall.goldenBall)
-[2016.10.06-09.56.27:545][206]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/allTheRocks.allTheRocks:PersistentLevel' has LevelScriptBlueprint '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks' with GeneratedClass '/Game/allTheRocks.allTheRocks_C' with ClassGeneratedBy '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks'
-[2016.10.06-09.56.27:545][206]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.10.06-09.56.27:545][206]PIE: New page: PIE session: allTheRocks (Oct 6, 2016, 12:56:27 PM)
-[2016.10.06-09.56.27:545][206]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_allTheRocks
-[2016.10.06-09.56.27:565][206]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020428s)
-[2016.10.06-09.56.27:566][206]LogAIModule: Creating AISystem for world allTheRocks
-[2016.10.06-09.56.27:566][206]LogPlayLevel: PIE: World Init took: (0.000931s)
-[2016.10.06-09.56.27:567][206]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/allTheRocks.allTheRocks to /Game/UEDPIE_0_allTheRocks.allTheRocks (0.021607s)
-[2016.10.06-09.56.27:587][206]LogInit: XAudio2 using 'Lautsprecher/Kopfhörer (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.10.06-09.56.27:598][206]LogInit: FAudioDevice initialized.
-[2016.10.06-09.56.27:649][206]LogWorld: Game class is 'Mode1_C'
-[2016.10.06-09.56.27:662][206]LogWorld: Bringing World /Game/UEDPIE_0_allTheRocks.allTheRocks up for play (max tick rate 0) at 2016.10.06-11.56.27
-[2016.10.06-09.56.27:663][206]LogWorld: Bringing up level for play took: 0.012612
-[2016.10.06-09.56.27:880][206]PIE: Info Play in editor start time for /Game/UEDPIE_0_allTheRocks 0.67
-[2016.10.06-09.56.27:881][206]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/allTheRocks.allTheRocks:PersistentLevel' has LevelScriptBlueprint '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks' with GeneratedClass '/Game/allTheRocks.allTheRocks_C' with ClassGeneratedBy '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks'
-[2016.10.06-09.56.35:314][688]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/allTheRocks.allTheRocks:PersistentLevel' has LevelScriptBlueprint '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks' with GeneratedClass '/Game/allTheRocks.allTheRocks_C' with ClassGeneratedBy '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks'
-[2016.10.06-09.56.35:363][688]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/allTheRocks.allTheRocks:PersistentLevel' has LevelScriptBlueprint '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks' with GeneratedClass '/Game/allTheRocks.allTheRocks_C' with ClassGeneratedBy '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks'
-[2016.10.06-09.56.38:130][  9]LogRenderer: Reallocating scene render targets to support 1140x392 (Frame:4856).
-[2016.10.06-09.56.38:190][ 10]LogRenderer: Reallocating scene render targets to support 1140x440 (Frame:4858).
-[2016.10.06-09.56.38:245][ 11]LogRenderer: Reallocating scene render targets to support 1140x488 (Frame:4860).
-[2016.10.06-09.56.38:306][ 12]LogRenderer: Reallocating scene render targets to support 1140x512 (Frame:4862).
-[2016.10.06-09.56.38:362][ 13]LogRenderer: Reallocating scene render targets to support 1140x540 (Frame:4864).
-[2016.10.06-09.56.38:440][ 14]LogRenderer: Reallocating scene render targets to support 1140x560 (Frame:4866).
-[2016.10.06-09.56.38:696][ 31]LogRenderer: Reallocating scene render targets to support 1140x568 (Frame:4870).
-[2016.10.06-09.56.38:758][ 32]LogRenderer: Reallocating scene render targets to support 1140x604 (Frame:4872).
-[2016.10.06-09.56.38:821][ 33]LogRenderer: Reallocating scene render targets to support 1140x644 (Frame:4874).
-[2016.10.06-09.56.38:888][ 34]LogRenderer: Reallocating scene render targets to support 1140x668 (Frame:4876).
-[2016.10.06-09.56.38:957][ 35]LogRenderer: Reallocating scene render targets to support 1140x676 (Frame:4878).
-[2016.10.06-09.56.39:010][ 36]LogRenderer: Reallocating scene render targets to support 1140x680 (Frame:4880).
-[2016.10.06-09.56.39:065][ 37]LogRenderer: Reallocating scene render targets to support 1140x684 (Frame:4882).
-[2016.10.06-09.56.40:685][225]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/allTheRocks.allTheRocks:PersistentLevel' has LevelScriptBlueprint '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks' with GeneratedClass '/Game/allTheRocks.allTheRocks_C' with ClassGeneratedBy '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks'
-[2016.10.06-09.56.40:685][225]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.10.06-09.56.40:685][225]PIE: New page: PIE session: allTheRocks (Oct 6, 2016, 12:56:40 PM)
-[2016.10.06-09.56.40:685][225]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_allTheRocks
-[2016.10.06-09.56.40:702][225]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017162s)
-[2016.10.06-09.56.40:703][225]LogAIModule: Creating AISystem for world allTheRocks
-[2016.10.06-09.56.40:703][225]LogPlayLevel: PIE: World Init took: (0.000743s)
-[2016.10.06-09.56.40:703][225]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/allTheRocks.allTheRocks to /Game/UEDPIE_0_allTheRocks.allTheRocks (0.018138s)
-[2016.10.06-09.56.40:724][225]LogInit: XAudio2 using 'Lautsprecher/Kopfhörer (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.10.06-09.56.40:734][225]LogInit: FAudioDevice initialized.
-[2016.10.06-09.56.40:785][225]LogWorld: Game class is 'Mode1_C'
-[2016.10.06-09.56.40:798][225]LogWorld: Bringing World /Game/UEDPIE_0_allTheRocks.allTheRocks up for play (max tick rate 0) at 2016.10.06-11.56.40
-[2016.10.06-09.56.40:798][225]LogWorld: Bringing up level for play took: 0.011735
-[2016.10.06-09.56.40:993][225]PIE: Info Play in editor start time for /Game/UEDPIE_0_allTheRocks -0.217
-[2016.10.06-09.56.40:993][225]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/allTheRocks.allTheRocks:PersistentLevel' has LevelScriptBlueprint '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks' with GeneratedClass '/Game/allTheRocks.allTheRocks_C' with ClassGeneratedBy '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks'
-[2016.10.06-09.57.34:680][663]LogCharacterMovement: PlayerNext_C_0 is stuck and failed to move! Velocity: X=82.804 Y=0.000 Z=0.000 Location: X=-36.437 Y=0.904 Z=82.886 Normal: X=-0.000 Y=-0.000 Z=-1.000 PenetrationDepth:65.886 Actor:Rock_C_159 Component:foundation BoneName:None
-[2016.10.06-09.57.34:696][664]LogCharacterMovement: PlayerNext_C_0 is stuck and failed to move! Velocity: X=27.096 Y=0.000 Z=0.000 Location: X=0.000 Y=0.000 Z=1.054 Normal: X=0.000 Y=0.000 Z=1.000 PenetrationDepth:86.947 Actor:Landscape_0 Component:LandscapeHeightfieldCollisionComponent_27 BoneName:None
-[2016.10.06-09.57.42:672][143]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/allTheRocks.allTheRocks:PersistentLevel' has LevelScriptBlueprint '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks' with GeneratedClass '/Game/allTheRocks.allTheRocks_C' with ClassGeneratedBy '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks'
-[2016.10.06-09.57.42:721][143]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/allTheRocks.allTheRocks:PersistentLevel' has LevelScriptBlueprint '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks' with GeneratedClass '/Game/allTheRocks.allTheRocks_C' with ClassGeneratedBy '/Game/allTheRocks.allTheRocks:PersistentLevel.allTheRocks'
-[2016.10.06-10.01.15:372][966]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors2 out of bounds [0/0]!
-
-[2016.10.06-10.01.15:372][966]LogScript:Warning: Accessed None trying to read property CallFunc_Array_Get_Item2
-	Rock_C /Engine/Transient.World_0:PersistentLevel.Rock_C_1
-	Function /Game/Blueprints/Rock.Rock_C:ExecuteUbergraph_Rock:05B7
-[2016.10.06-10.05.17:032][112]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/UI/Hud" FILE="../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/Blueprints/UI/Hud.uasset" SILENT=true
-[2016.10.06-10.05.17:101][112]LogSavePackage: Save=38.43ms
-[2016.10.06-10.05.17:102][112]LogSavePackage: Moving '../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Saved/Hud584516F9496F21360CD0418EC5C772D1.tmp' to '../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/Blueprints/UI/Hud.uasset'
-[2016.10.06-10.05.17:107][112]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/Blueprints/UI/Hud.uasset
-[2016.10.06-10.57.01:058][296]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
-[2016.10.06-10.57.05:446][455]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/allTheRocks" FILE="../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/allTheRocks.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2016.10.06-10.57.05:776][455]LogSavePackage: Save=275.29ms
-[2016.10.06-10.57.05:776][455]LogSavePackage: Moving '../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Saved/allTheRocks2E5534E64950F847F4D340B1B9FA4AB0.tmp' to '../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/allTheRocks.umap'
-[2016.10.06-10.57.05:781][455]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/allTheRocks.umap
-[2016.10.06-10.57.05:830][455]LogFileHelpers: Saving map 'allTheRocks' took 1.433
-[2016.10.06-10.57.05:939][455]LogSavePackage: Save=56.13ms
-[2016.10.06-10.57.05:939][455]LogSavePackage: Moving '../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Saved/goldenBallCC71EB054D544894C59E1CA435234DDB.tmp' to '../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/Blueprints/goldenGlobe/goldenBall.uasset'
-[2016.10.06-10.57.05:942][455]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/Blueprints/goldenGlobe/goldenBall.uasset
-[2016.10.06-10.57.05:948][455]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/UI/globePic" FILE="../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/Blueprints/UI/globePic.uasset" SILENT=true
-[2016.10.06-10.57.05:955][455]LogSavePackage: Save=5.57ms
-[2016.10.06-10.57.05:955][455]LogSavePackage: Moving '../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Saved/globePic158B013E4C3787CACCC8DAA17B27B434.tmp' to '../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/Blueprints/UI/globePic.uasset'
-[2016.10.06-10.57.05:958][455]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/Blueprints/UI/globePic.uasset
-[2016.10.06-10.57.05:962][455]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/UI/Hud" FILE="../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/Blueprints/UI/Hud.uasset" SILENT=true
-[2016.10.06-10.57.06:019][455]LogSavePackage: Save=28.83ms
-[2016.10.06-10.57.06:019][455]LogSavePackage: Moving '../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Saved/HudE7CCD7534283C5027C44BF8192B24618.tmp' to '../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/Blueprints/UI/Hud.uasset'
-[2016.10.06-10.57.06:022][455]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/Blueprints/UI/Hud.uasset
-[2016.10.06-10.57.06:151][455]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.10.06-10.57.06:431][456]Cmd: QUIT_EDITOR
-[2016.10.06-10.57.06:720][456]LogExit: Preparing to exit.
-[2016.10.06-10.57.07:717][456]LogExit: Editor shut down
-[2016.10.06-10.57.07:719][456]LogExit: Transaction tracking system shut down
-[2016.10.06-10.57.08:052][456]LogObj: Freed 0b from 0 cluster array pools.
-[2016.10.06-10.57.08:052][456]LogExit: Object subsystem successfully closed.
-[2016.10.06-10.57.08:093][456]LogD3D11RHI: Shutdown
-[2016.10.06-10.57.08:093][456]LogD3D11RHI: CleanupD3DDevice
-[2016.10.06-10.57.08:211][456]LogD3D11RHI: ~FD3D11DynamicRHI
-[2016.10.06-10.57.08:252][456]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (217)
-[2016.10.06-10.57.08:253][456]LogModuleManager: Shutting down and abandoning module SequencerWidgets (216)
-[2016.10.06-10.57.08:253][456]LogModuleManager: Shutting down and abandoning module BlueprintGraph (215)
-[2016.10.06-10.57.08:253][456]LogModuleManager: Shutting down and abandoning module SynthBenchmark (214)
-[2016.10.06-10.57.08:253][456]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (213)
-[2016.10.06-10.57.08:253][456]LogModuleManager: Shutting down and abandoning module CrashTracker (212)
-[2016.10.06-10.57.08:253][456]LogModuleManager: Shutting down and abandoning module SceneOutliner (211)
-[2016.10.06-10.57.08:254][456]LogModuleManager: Shutting down and abandoning module WidgetCarousel (210)
-[2016.10.06-10.57.08:254][456]LogModuleManager: Shutting down and abandoning module AddContentDialog (209)
-[2016.10.06-10.57.08:262][456]LogModuleManager: Shutting down and abandoning module GameplayTags (208)
-[2016.10.06-10.57.08:262][456]LogModuleManager: Shutting down and abandoning module EditorWidgets (207)
-[2016.10.06-10.57.08:262][456]LogModuleManager: Shutting down and abandoning module CollectionManager (206)
-[2016.10.06-10.57.08:263][456]LogModuleManager: Shutting down and abandoning module StatsViewer (205)
-[2016.10.06-10.57.08:264][456]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
-[2016.10.06-10.57.08:264][456]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
-[2016.10.06-10.57.08:266][456]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
-[2016.10.06-10.57.08:266][456]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
-[2016.10.06-10.57.08:266][456]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
-[2016.10.06-10.57.08:266][456]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
-[2016.10.06-10.57.08:266][456]LogModuleManager: Shutting down and abandoning module BspMode (198)
-[2016.10.06-10.57.08:267][456]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
-[2016.10.06-10.57.08:267][456]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
-[2016.10.06-10.57.08:267][456]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
-[2016.10.06-10.57.08:267][456]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
-[2016.10.06-10.57.08:267][456]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
-[2016.10.06-10.57.08:268][456]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
-[2016.10.06-10.57.08:268][456]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
-[2016.10.06-10.57.08:271][456]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
-[2016.10.06-10.57.08:271][456]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
-[2016.10.06-10.57.08:271][456]LogModuleManager: Shutting down and abandoning module SessionServices (188)
-[2016.10.06-10.57.08:271][456]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
-[2016.10.06-10.57.08:271][456]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
-[2016.10.06-10.57.08:272][456]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
-[2016.10.06-10.57.08:274][456]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
-[2016.10.06-10.57.08:274][456]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
-[2016.10.06-10.57.08:274][456]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
-[2016.10.06-10.57.08:275][456]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
-[2016.10.06-10.57.08:275][456]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
-[2016.10.06-10.57.08:921][456]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
-[2016.10.06-10.57.08:923][456]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
-[2016.10.06-10.57.08:923][456]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
-[2016.10.06-10.57.08:923][456]LogModuleManager: Shutting down and abandoning module MergeActors (176)
-[2016.10.06-10.57.08:924][456]LogModuleManager: Shutting down and abandoning module SizeMap (175)
-[2016.10.06-10.57.08:924][456]LogModuleManager: Shutting down and abandoning module TreeMap (174)
-[2016.10.06-10.57.08:925][456]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
-[2016.10.06-10.57.08:925][456]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
-[2016.10.06-10.57.08:926][456]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
-[2016.10.06-10.57.08:928][456]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
-[2016.10.06-10.57.08:928][456]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
-[2016.10.06-10.57.08:929][456]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
-[2016.10.06-10.57.08:929][456]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
-[2016.10.06-10.57.08:929][456]LogModuleManager: Shutting down and abandoning module XmlParser (166)
-[2016.10.06-10.57.08:930][456]LogModuleManager: Shutting down and abandoning module Blutility (165)
-[2016.10.06-10.57.08:930][456]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
-[2016.10.06-10.57.08:931][456]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
-[2016.10.06-10.57.08:932][456]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
-[2016.10.06-10.57.08:933][456]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
-[2016.10.06-10.57.08:933][456]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
-[2016.10.06-10.57.08:934][456]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
-[2016.10.06-10.57.08:935][456]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
-[2016.10.06-10.57.08:936][456]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
-[2016.10.06-10.57.08:937][456]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
-[2016.10.06-10.57.08:937][456]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
-[2016.10.06-10.57.08:983][456]LogModuleManager: Shutting down and abandoning module AutomationController (154)
-[2016.10.06-10.57.08:984][456]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
-[2016.10.06-10.57.08:986][456]LogModuleManager: Shutting down and abandoning module Layers (152)
-[2016.10.06-10.57.08:988][456]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
-[2016.10.06-10.57.08:988][456]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
-[2016.10.06-10.57.08:988][456]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
-[2016.10.06-10.57.08:989][456]LogModuleManager: Shutting down and abandoning module Persona (148)
-[2016.10.06-10.57.08:991][456]LogModuleManager: Shutting down and abandoning module Kismet (147)
-[2016.10.06-10.57.08:991][456]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
-[2016.10.06-10.57.08:992][456]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
-[2016.10.06-10.57.08:993][456]LogModuleManager: Shutting down and abandoning module Toolbox (144)
-[2016.10.06-10.57.08:993][456]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
-[2016.10.06-10.57.08:994][456]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
-[2016.10.06-10.57.08:994][456]LogModuleManager: Shutting down and abandoning module OutputLog (141)
-[2016.10.06-10.57.08:995][456]LogModuleManager: Shutting down and abandoning module GammaUI (140)
-[2016.10.06-10.57.08:995][456]LogModuleManager: Shutting down and abandoning module Documentation (139)
-[2016.10.06-10.57.08:997][456]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
-[2016.10.06-10.57.08:998][456]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
-[2016.10.06-10.57.08:998][456]LogModuleManager: Shutting down and abandoning module Analytics (136)
-[2016.10.06-10.57.08:998][456]LogModuleManager: Shutting down and abandoning module PortalServices (135)
-[2016.10.06-10.57.08:998][456]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
-[2016.10.06-10.57.08:998][456]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
-[2016.10.06-10.57.08:998][456]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
-[2016.10.06-10.57.08:998][456]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
-[2016.10.06-10.57.08:998][456]LogModuleManager: Shutting down and abandoning module AIModule (130)
-[2016.10.06-10.57.08:998][456]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
-[2016.10.06-10.57.09:067][456]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
-[2016.10.06-10.57.09:069][456]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
-[2016.10.06-10.57.09:069][456]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
-[2016.10.06-10.57.09:069][456]LogModuleManager: Shutting down and abandoning module SteamVR (125)
-[2016.10.06-10.57.09:069][456]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
-[2016.10.06-10.57.09:069][456]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
-[2016.10.06-10.57.09:069][456]LogModuleManager: Shutting down and abandoning module OculusInput (122)
-[2016.10.06-10.57.09:069][456]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
-[2016.10.06-10.57.09:070][456]LogModuleManager: Shutting down and abandoning module CableComponent (120)
-[2016.10.06-10.57.09:070][456]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
-[2016.10.06-10.57.09:070][456]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
-[2016.10.06-10.57.09:072][456]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
-[2016.10.06-10.57.09:072][456]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
-[2016.10.06-10.57.09:072][456]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
-[2016.10.06-10.57.09:072][456]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
-[2016.10.06-10.57.09:072][456]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
-[2016.10.06-10.57.09:073][456]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
-[2016.10.06-10.57.09:074][456]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
-[2016.10.06-10.57.09:074][456]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
-[2016.10.06-10.57.09:074][456]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
-[2016.10.06-10.57.09:074][456]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
-[2016.10.06-10.57.09:075][456]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
-[2016.10.06-10.57.09:076][456]LogModuleManager: Shutting down and abandoning module SourceControl (106)
-[2016.10.06-10.57.09:077][456]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
-[2016.10.06-10.57.09:078][456]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
-[2016.10.06-10.57.09:078][456]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
-[2016.10.06-10.57.09:078][456]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
-[2016.10.06-10.57.09:078][456]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
-[2016.10.06-10.57.09:078][456]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
-[2016.10.06-10.57.09:079][456]LogModuleManager: Shutting down and abandoning module HotReload (99)
-[2016.10.06-10.57.09:081][456]LogModuleManager: Shutting down and abandoning module MainFrame (98)
-[2016.10.06-10.57.09:081][456]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
-[2016.10.06-10.57.09:085][456]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
-[2016.10.06-10.57.09:090][456]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
-[2016.10.06-10.57.09:091][456]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
-[2016.10.06-10.57.09:192][456]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
-[2016.10.06-10.57.09:192][456]LogModuleManager: Shutting down and abandoning module Paper2D (92)
-[2016.10.06-10.57.09:193][456]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
-[2016.10.06-10.57.09:194][456]LogModuleManager: Shutting down and abandoning module Media (90)
-[2016.10.06-10.57.09:194][456]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
-[2016.10.06-10.57.09:195][456]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
-[2016.10.06-10.57.09:195][456]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
-[2016.10.06-10.57.09:195][456]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
-[2016.10.06-10.57.09:195][456]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
-[2016.10.06-10.57.09:195][456]LogModuleManager: Shutting down and abandoning module VREditor (84)
-[2016.10.06-10.57.09:195][456]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
-[2016.10.06-10.57.09:196][456]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
-[2016.10.06-10.57.09:196][456]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
-[2016.10.06-10.57.09:198][456]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
-[2016.10.06-10.57.09:198][456]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
-[2016.10.06-10.57.09:199][456]LogModuleManager: Shutting down and abandoning module Sequencer (78)
-[2016.10.06-10.57.09:199][456]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
-[2016.10.06-10.57.09:199][456]LogModuleManager: Shutting down and abandoning module MessageLog (76)
-[2016.10.06-10.57.09:199][456]LogModuleManager: Shutting down and abandoning module AssetTools (75)
-[2016.10.06-10.57.09:201][456]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
-[2016.10.06-10.57.09:201][456]LogModuleManager: Shutting down and abandoning module UMG (73)
-[2016.10.06-10.57.09:201][456]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
-[2016.10.06-10.57.09:203][456]LogModuleManager: Shutting down and abandoning module Slate (71)
-[2016.10.06-10.57.09:203][456]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
-[2016.10.06-10.57.09:213][456]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
-[2016.10.06-10.57.09:213][456]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
-[2016.10.06-10.57.09:213][456]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
-[2016.10.06-10.57.09:213][456]LogModuleManager: Shutting down and abandoning module Networking (65)
-[2016.10.06-10.57.09:213][456]LogModuleManager: Shutting down and abandoning module Core (64)
-[2016.10.06-10.57.09:213][456]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
-[2016.10.06-10.57.09:227][456]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
-[2016.10.06-10.57.09:521][456]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
-[2016.10.06-10.57.09:522][456]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
-[2016.10.06-10.57.09:522][456]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
-[2016.10.06-10.57.09:523][456]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
-[2016.10.06-10.57.09:555][456]LogDerivedDataCache: Shutdown
-[2016.10.06-10.57.09:555][456]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
-[2016.10.06-10.57.09:555][456]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
-[2016.10.06-10.57.09:556][456]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
-[2016.10.06-10.57.09:556][456]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
-[2016.10.06-10.57.09:557][456]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
-[2016.10.06-10.57.09:557][456]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
-[2016.10.06-10.57.09:557][456]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
-[2016.10.06-10.57.09:557][456]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
-[2016.10.06-10.57.09:557][456]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
-[2016.10.06-10.57.09:557][456]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
-[2016.10.06-10.57.09:557][456]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
-[2016.10.06-10.57.09:557][456]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
-[2016.10.06-10.57.09:558][456]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
-[2016.10.06-10.57.09:558][456]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
-[2016.10.06-10.57.09:558][456]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
-[2016.10.06-10.57.09:558][456]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
-[2016.10.06-10.57.09:558][456]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
-[2016.10.06-10.57.09:558][456]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
-[2016.10.06-10.57.09:558][456]LogModuleManager: Shutting down and abandoning module Messaging (39)
-[2016.10.06-10.57.09:558][456]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
-[2016.10.06-10.57.09:558][456]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
-[2016.10.06-10.57.09:558][456]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
-[2016.10.06-10.57.09:558][456]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
-[2016.10.06-10.57.09:558][456]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
-[2016.10.06-10.57.09:558][456]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
-[2016.10.06-10.57.09:559][456]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
-[2016.10.06-10.57.09:559][456]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
-[2016.10.06-10.57.09:559][456]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
-[2016.10.06-10.57.09:559][456]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
-[2016.10.06-10.57.09:559][456]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
-[2016.10.06-10.57.09:559][456]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
-[2016.10.06-10.57.09:559][456]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
-[2016.10.06-10.57.09:559][456]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
-[2016.10.06-10.57.09:559][456]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
-[2016.10.06-10.57.09:559][456]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
-[2016.10.06-10.57.09:559][456]LogModuleManager: Shutting down and abandoning module InputCore (22)
-[2016.10.06-10.57.09:559][456]LogModuleManager: Shutting down and abandoning module Settings (21)
-[2016.10.06-10.57.09:559][456]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
-[2016.10.06-10.57.09:560][456]LogModuleManager: Shutting down and abandoning module HTTP (18)
-[2016.10.06-10.57.11:064][456]LogModuleManager: Shutting down and abandoning module XMPP (17)
-[2016.10.06-10.57.11:068][456]LogModuleManager: Shutting down and abandoning module OculusRift (16)
-[2016.10.06-10.57.11:069][456]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
-[2016.10.06-10.57.11:070][456]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2016.10.06-10.57.11:070][456]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2016.10.06-10.57.11:070][456]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2016.10.06-10.57.11:070][456]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2016.10.06-10.57.11:118][456]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2016.10.06-10.57.11:119][456]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2016.10.06-10.57.11:119][456]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2016.10.06-10.57.11:119][456]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2016.10.06-10.57.11:119][456]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2016.10.06-10.57.11:119][456]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2016.10.06-10.57.11:119][456]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2016.10.06-10.57.11:119][456]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2016.10.06-10.57.11:120][456]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2016.10.06-10.57.11:120][456]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2016.10.06-10.57.11:125][456]LogExit: Exiting.
-[2016.10.06-10.57.11:157][456]Log file closed, 10/06/16 12:57:11
+[2016.10.10-11.08.04:390][  0]LogInit: Selected Device Profile: [Windows]
+[2016.10.10-11.08.04:391][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.10.10-11.08.04:409][  0]LogInit: Computer: NBC-PC
+[2016.10.10-11.08.04:409][  0]LogInit: User: MBC
+[2016.10.10-11.08.04:409][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.10.10-11.08.04:409][  0]LogInit: High frequency timer resolution =2.338446 MHz
+[2016.10.10-11.08.04:409][  0]LogMemory: Memory total: Physical=7.7GB (8GB approx)
+[2016.10.10-11.08.04:409][  0]LogMemory: Platform Memory Stats for Windows
+[2016.10.10-11.08.04:409][  0]LogMemory: Process Physical Memory: 191.08 MB used, 191.08 MB peak
+[2016.10.10-11.08.04:409][  0]LogMemory: Process Virtual Memory: 195.31 MB used, 195.31 MB peak
+[2016.10.10-11.08.04:409][  0]LogMemory: Physical Memory: 4404.91 MB used, 7888.79 MB total
+[2016.10.10-11.08.04:409][  0]LogMemory: Virtual Memory: 553.76 MB used, 134217728.00 MB total
+[2016.10.10-11.08.04:432][  0]LogTextLocalizationManager: No translations for ('de-DE') exist, falling back to 'en' for localization and internationalization data.
+[2016.10.10-11.08.04:851][  0]LogD3D11RHI: D3D11 adapters:
+[2016.10.10-11.08.04:877][  0]LogD3D11RHI:    0. 'NVIDIA NVS 5400M' (Feature Level 11_0)
+[2016.10.10-11.08.04:877][  0]LogD3D11RHI:       978/0/3944 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2016.10.10-11.08.04:881][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4000' (Feature Level 11_0)
+[2016.10.10-11.08.04:881][  0]LogD3D11RHI:       32/0/1760 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2016.10.10-11.08.04:882][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.10.10-11.08.04:882][  0]LogD3D11RHI:       0/0/3944 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.10.10-11.08.04:882][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.10.10-11.08.04:886][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.10.10-11.08.04:886][  0]LogD3D11RHI:     GPU DeviceId: 0xdef (for the marketing name, search the web for "GPU Device Id")
+[2016.10.10-11.08.04:886][  0]LogWindows: EnumDisplayDevices:
+[2016.10.10-11.08.04:887][  0]LogWindows:    0. 'Intel(R) HD Graphics 4000' (P:1 D:1)
+[2016.10.10-11.08.04:887][  0]LogWindows:    1. 'Intel(R) HD Graphics 4000' (P:0 D:0)
+[2016.10.10-11.08.04:887][  0]LogWindows:    2. 'Intel(R) HD Graphics 4000' (P:0 D:0)
+[2016.10.10-11.08.04:887][  0]LogWindows:    3. 'NVIDIA NVS 5400M' (P:0 D:0)
+[2016.10.10-11.08.04:887][  0]LogWindows:    4. 'NVIDIA NVS 5400M' (P:0 D:0)
+[2016.10.10-11.08.04:888][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:2 
+[2016.10.10-11.08.04:888][  0]LogD3D11RHI:     Adapter Name: NVIDIA NVS 5400M
+[2016.10.10-11.08.04:888][  0]LogD3D11RHI:   Driver Version: 369.09 (internal:21.21.13.6909, unified:369.09)
+[2016.10.10-11.08.04:888][  0]LogD3D11RHI:      Driver Date: 8-1-2016
+[2016.10.10-11.08.04:888][  0]LogRHI: Texture pool is 684 MB (70% of 978 MB)
+[2016.10.10-11.08.04:904][  0]LogD3D11RHI: Async texture creation enabled
+[2016.10.10-11.08.04:917][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2016.10.10-11.08.04:918][  0]LogShaderCompilers: Guid format shader working directory is -25 characters bigger than the processId version (../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Intermediate/Shaders/WorkingDirectory/6976/).
+[2016.10.10-11.08.04:918][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/MBC/AppData/Local/Temp/UnrealShaderWorkingDir/970F722C458F0144DE1983B39469E692/'.
+[2016.10.10-11.08.04:918][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.10.10-11.08.05:914][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.10.10-11.08.05:924][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.10.10-11.08.05:934][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.10.10-11.08.05:944][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.10.10-11.08.05:954][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.10.10-11.08.05:963][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.10.10-11.08.05:972][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.10.10-11.08.05:980][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.10.10-11.08.05:989][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.10.10-11.08.05:998][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.10.10-11.08.06:006][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.10.10-11.08.06:024][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.10.10-11.08.06:024][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.10.10-11.08.06:025][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.10.10-11.08.06:047][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.10.10-11.08.06:056][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.10.10-11.08.06:064][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.10.10-11.08.06:073][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.10.10-11.08.06:082][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.10.10-11.08.06:082][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.10.10-11.08.06:153][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.10.10-11.08.06:204][  0]LogDerivedDataCache: Loaded boot cache 0.05s 48MB C:/Users/MBC/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.10.10-11.08.06:205][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/MBC/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.10.10-11.08.06:205][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.10.10-11.08.06:205][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.10.10-11.08.06:205][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.10.10-11.08.06:205][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.10.10-11.08.06:223][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.10.10-11.08.06:235][  0]LogDerivedDataCache: Using Local data cache path C:/Users/MBC/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.10.10-11.08.06:445][  0]LogInit: Selected Device Profile: [Windows]
+[2016.10.10-11.08.06:446][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.10.10-11.08.06:615][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.10.10-11.08.06:615][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.10.10-11.08.06:615][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.10.10-11.08.06:865][  0]LogAssetRegistry: FAssetRegistry took 0.0212 seconds to start up
+[2016.10.10-11.08.06:883][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.015527 seconds
+[2016.10.10-11.08.06:889][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.10.10-11.08.06:889][  0]LogUObjectAllocator: 5855632 out of 0 bytes used by permanent object pool.
+[2016.10.10-11.08.06:889][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.10.10-11.08.06:895][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.10.10-11.08.07:071][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.10.10-11.08.07:071][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.10.10-11.08.07:723][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.10.10-11.08.07:937][  0]SourceControl: Info Source control is disabled
+[2016.10.10-11.08.07:972][  0]SourceControl: Info Source control is disabled
+[2016.10.10-11.08.07:980][  0]SourceControl: Info Source control is disabled
+[2016.10.10-11.08.07:987][  0]SourceControl: Info Source control is disabled
+[2016.10.10-11.08.08:184][  0]LogEngine: Initializing Engine...
+[2016.10.10-11.08.08:185][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.10.10-11.08.08:185][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.10.10-11.08.08:330][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.10.10-11.08.08:334][  0]LogInit: XAudio2 using 'Lautsprecher/Kopfhörer (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.10-11.08.08:348][  0]LogInit: FAudioDevice initialized.
+[2016.10.10-11.08.08:372][  0]LogDerivedDataCache: Saved boot cache 0.02s 48MB C:/Users/MBC/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.10.10-11.08.08:379][  0]LogInit: Texture streaming: Enabled
+[2016.10.10-11.08.08:402][  0]LogInit: Transaction tracking system initialized
+[2016.10.10-11.08.08:423][  0]BlueprintLog: New page: Editor Load
+[2016.10.10-11.08.08:486][  0]LocalizationService: Info Localization service is disabled
+[2016.10.10-11.08.08:714][  0]LogConsoleResponse:Display: 
+[2016.10.10-11.08.08:820][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.10.10-11.08.08:820][  0]LogCook:Display: Mobile HDR setting 1
+[2016.10.10-11.08.08:912][  0]LogFileCache: Scanning file cache for directory 'C:/Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/' took 0.02s
+[2016.10.10-11.08.08:912][  0]SourceControl: Info Source control is disabled
+[2016.10.10-11.08.08:912][  0]Cmd: MAP LOAD FILE="../../../../../../Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/allTheRocks.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.10.10-11.08.08:917][  0]LightingResults: New page: Lighting Build
+[2016.10.10-11.08.08:919][  0]MapCheck: New page: Map Check
+[2016.10.10-11.08.08:920][  0]LightingResults: New page: Lighting Build
+[2016.10.10-11.08.10:804][  0]LogAIModule: Creating AISystem for world allTheRocks
+[2016.10.10-11.08.10:945][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.10.10-11.08.10:946][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.10.10-11.08.11:014][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 68.305ms to complete.
+[2016.10.10-11.08.11:014][  0]LogFileHelpers: Loading map 'allTheRocks' took 2.102
+[2016.10.10-11.08.11:238][  0]LogCollectionManager: Loaded 0 collections in 0.002658 seconds
+[2016.10.10-11.08.11:293][  0]LogFileCache: Scanning file cache for directory 'C:/Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Saved/Collections/' took 0.01s
+[2016.10.10-11.08.11:293][  0]LogFileCache: Scanning file cache for directory 'C:/Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/Developers/MBC/Collections/' took 0.01s
+[2016.10.10-11.08.11:293][  0]LogFileCache: Scanning file cache for directory 'C:/Users/MBC/Documents/PsychGame/PsychGame/PsyychGame2/Content/Collections/' took 0.01s
+[2016.10.10-11.08.11:293][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2016.10.10-11.08.11:305][  0]LogContentBrowser: Native class hierarchy populated in 0.0103 seconds. Added 2047 classes and 369 folders.
+[2016.10.10-11.08.11:312][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.10.10-11.08.11:312][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.10.10-11.08.11:312][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0005 seconds. Added 12 classes and 0 folders.
+[2016.10.10-11.08.11:319][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.10.10-11.08.11:622][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.10.10-11.08.11:635][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2016.10.10-11.08.11:826][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.10.10-11.08.11:836][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.10.10-11.08.11:862][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.10.10-11.08.11:862][  0]LogLoad: Full Startup: 8.33 seconds (BP compile: 0.35 seconds)
+[2016.10.10-11.08.11:862][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.10.10-11.08.11:862][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.10.10-11.08.11:871][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.10.10-11.08.11:871][  0]LogOcInput: OculusInput pre-init called
+[2016.10.10-11.08.11:904][  0]LogContentStreaming: Texture pool size now 200 MB
+[2016.10.10-11.08.11:979][  0]LogRenderer: Reallocating scene render targets to su

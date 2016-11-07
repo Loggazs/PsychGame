@@ -3,7 +3,7 @@
 #include "PsyychGame2.h"
 #include "workWithCSV.h"
 
-bool UworkWithCSV::SaveStringToFile(
+bool UworkWihCSV::SaveStringToFile(
 	FString SaveDirectory,
 	FString FileName,
 	FString SaveText,
